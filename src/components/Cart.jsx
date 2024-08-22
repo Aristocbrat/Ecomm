@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useCart } from 'react-use-cart'
 import { PiMaskSadBold } from "react-icons/pi";
 import { IoMdAdd } from "react-icons/io";
@@ -7,6 +7,7 @@ import { MdCancel } from "react-icons/md";
 import Navbar from './Navbar'
 import Footer from './Footer'
 const Cart = () => {
+ const [emptyWishlist,] = useState(0);
     const {
       isEmpty,
       totalUniqueItems,
@@ -15,7 +16,7 @@ const Cart = () => {
       cartTotal,
       updateItemQuantity,
       removeItem,
-      emptyCart,
+     
       
     } = useCart()
     if(isEmpty) return (
@@ -60,7 +61,7 @@ const Cart = () => {
            <h1>Total Price =# {cartTotal} </h1>
          </div>
          <div className="em flex justify-center text-xl font-bold">
-           <button className='btn bg-slate-600 text-white' onClick={()=> emptyCart()}>Clear Cart</button>
+           <button className='btn bg-slate-600 text-white' onClick={()=> emptyWishlist()}>Clear Cart</button>
            <button className='btn bg-slate-600 text-white'>PayNow</button>
          </div>
        </div>

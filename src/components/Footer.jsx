@@ -114,7 +114,7 @@ const Footer = () => {
 
   return (
     <div>
-        <div className="foot mt-4 bg-[#1f4550] text-white font-bold">
+        <div className="foot mt-4 bg-[#1f4550]  dark:bg-black dark:text-white text-white font-bold">
             <div className="sign border border-l-0 border-r-0 py-4  border-white ">
                 <p className='flex justify-center text-[14px]'>See personalized recommendations</p>
                 <button className='flex bg-yellow-500  px-12 rounded-full  py-2 mx-auto mt-2 hover:bg-slate-600  hover:scale-90 duration-300 hover:text-white'>Sign in</button>
@@ -168,7 +168,7 @@ const Footer = () => {
                   <span className='pt-3'>Shop from </span>
                   <CustomDropdown2/>
              </div>
-             <div className="footerlast bg-[#13282eb9] py-8">
+             <div className="footerlast bg-[#13282eb9]  dark:bg-black dark:text-white py-8">
       <div className="ftlast flex justify-center gap-12 flex-wrap mt-5 w-[75%] items-center mx-auto">
          <ul className='hover:underline w-30'>
             <h1 className='text-xl'>3rdGB Music</h1>

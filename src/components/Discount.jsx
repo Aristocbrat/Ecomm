@@ -19,6 +19,10 @@ import img4 from "../assets/images/mn2.jpg"
 import img5 from "../assets/images/login.jpg"
 import img6 from "../assets/images/gdsp.jpg"
 import img7 from "../assets/images/gdsp1.jpg"
+import img8 from "../assets/images/new.jpg"
+import img9 from "../assets/images/team2.jpg"
+import img10 from "../assets/images/team1.jpg"
+import img11 from "../assets/images/mn1.jpg"
 
 const Discount = () => {
   const [message, setMessage] = useState('');
@@ -30,7 +34,7 @@ const Discount = () => {
   return (
     <div>
        <Navbar />
-       <div className="regis sticky top-[0%] z-20 w-full bg-white flex justify-between px-7 py-4">
+       <div className="regis sticky top-[0%] z-20 w-full bg-white  dark:bg-black dark:text-white flex justify-between px-7 py-4">
   <h1 className='text-3xl font-bold'>Sell with 3rdGB</h1>
   <h1 className='flex py-2 font-semibold'>
     <RiDiscountPercentFill className='text-3xl text-green-500' /> 
@@ -42,7 +46,7 @@ const Discount = () => {
   </button>
 </div>
 
-          <div className="main mt-8 py-4 bg-[#f1efef] [clip-path:ellipse(900px_400px_at_10%_9%)] w-full">
+          <div className="main mt-8 py-4 bg-[#f1efef] dark:bg-[#1f4550]  [clip-path:ellipse(900px_400px_at_10%_9%)] w-full">
              <h1 className='text-7xl px-4 py-3 w-[800px] font-bold ms-7'>Create a 3rdGB seller's account</h1>
              <p className='text-xl font-bold px-3 ms-9'>Sell with the fastest-growing & preferred acquisition channel.</p>
              <button className='flex bg-yellow-500  px-12 py-3 ms-20 mt-5 text-white font-bold rounded-full  hover:bg-slate-600  hover:scale-90 duration-300 hover:text-white'>Sign Up</button>
@@ -53,7 +57,7 @@ const Discount = () => {
 	         <div class="loader"></div>
 	         <div class="loader"></div>
           </div>
-          <div className="tt mt-[-7%] bg-[#f1efef] w-[400px] ml-[69%] rounded-r-full py-3">
+          <div className="tt mt-[-7%] bg-[#f1efef] dark:bg-[#1f4550] w-[400px] ml-[69%] rounded-r-full py-3">
            <h1 className=' text-2xl font-bold px-4'> Register now and get the best selling experience </h1>
            </div>
           <div className="submain mt-8 py-7">
@@ -64,7 +68,7 @@ const Discount = () => {
             <div className="inctext mt-10 ml-4">
                <h1 className='text-6xl font-bold pb-4'>Get started with #50,000 in Incentive</h1>
                <p className='w-[590px] font-bold'>Ready to sell with 3rdGB ? Well get ready to have your mind blown with Our Series of Incentives.</p>
-               <div className="inctt2 bg-[#f1efef] py-4 px-4 rounded-lg mt-5">
+               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 px-4 rounded-lg mt-5">
                 <ul>
                   <li className='py-2 flex gap-2'><FaCheck /> <span className='font-bold'>10% back</span>on your first #50,000 on branded sales. </li>
                   <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>5% back </span> through your first year until you reach #1,000,000. </li>
@@ -75,38 +79,61 @@ const Discount = () => {
                </div>
             </div>
             </div>
-            <div className="ske ml-[4%] mt-9 flex gap-[98px] flex-wrap">
+            <div className="ske ml-[7%] mt-9 flex gap-[98px] flex-wrap dark:text-black">
             <div className="flex w-52 flex-col gap-4 ">
-                  <div className="skeleton h-32 w-full"></div>
-                  <div className="skeleton h-4 w-28"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
+                  <div className="skeleton h-32 w-full">
+                      <img src={img8} alt="" className='w-[100px] rounded-full h-[100px] object-cover mx-auto py-1' />
+                      <p className='font-extrabold text-[13px] flex justify-center'>Babatunde Emmanuel </p>
+                  </div>
+                  <div className="skeleton h-6 w-28">
+                    <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Pro</h1>
+                  </div>
+                  <div className="skeleton h-20 w-full">
+                  <p className='text-[13px] font-bold px-3 py-2'>It helps you grow your career and that is my best part, I love this progam alot.</p>
+                  </div>
               </div>
+
               <div className="flex w-52 flex-col gap-4 ">
-                  <div className="skeleton h-32 w-full"></div>
-                  <div className="skeleton h-4 w-28"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
+                  <div className="skeleton h-32 w-full">
+                  <img src={img11} alt="" className='w-[100px] rounded-full h-[100px] object-cover mx-auto py-1' />
+                  <p className='font-extrabold text-[13px] flex justify-center'>Vessil Ahmed </p>
+                  </div>
+                  <div className="skeleton h-6 w-28">
+                  <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Veteran</h1>
+                  </div>
+                  <div className="skeleton h-20 w-full">
+                  <p className='text-[13px] font-bold px-3 py-2'>The fact that i can pick the type of sales plan i want is tthe best part .</p>
+                  </div>
               </div>
+
               <div className="flex w-52 flex-col gap-4 ">
-                  <div className="skeleton h-32 w-full"></div>
-                  <div className="skeleton h-4 w-28"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
+                  <div className="skeleton h-32 w-full">
+                  <img src={img9} alt="" className='w-[100px] rounded-full h-[100px] object-cover mx-auto py-1' />
+                  <p className='font-extrabold text-[13px] flex justify-center'>Ellen Fill </p>
+                  </div>
+                  <div className="skeleton h-6 w-28">
+                  <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Regular</h1>
+                  </div>
+                  <div className="skeleton h-20 w-full">
+                  <p className='text-[13px] font-bold px-3 py-2'>I have made a lot of decisions but this has been one of best of my Sales career .</p>
+                  </div>
               </div>
+
               <div className="flex w-52 flex-col gap-4 ">
-                  <div className="skeleton h-32 w-full"></div>
-                  <div className="skeleton h-4 w-28"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
-                  <div className="skeleton h-4 w-full"></div>
+                  <div className="skeleton h-32 w-full">
+                  <img src={img10} alt="" className='w-[100px] rounded-full h-[100px] object-cover mx-auto py-1' />
+                  <p className='font-extrabold text-[13px] flex justify-center'>Ugochi Ada </p>
+                  </div>
+                  <div className="skeleton h-6 w-28">
+                  <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Newbie</h1>
+                  </div>
+                  <div className="skeleton h-20  w-full">
+                    <p className='text-[13px] font-bold px-3 py-2'>This has been a very helpful experience & i am working to be a pro.</p>
+                  </div>
               </div>
             </div>
 
-           <div className="why bg-[#f1efef] flex mt-8 px-3 rounded-[40px] w-[87%] mx-auto">
+           <div className="why bg-[#f1efef] flex mt-8 px-3 rounded-[40px] w-[87%] mx-auto dark:bg-[#1f4550] dark:text-white">
               <div className="part1 w-[59%] py-5 px-4">
                 <h1 className='text-5xl px-7 font-extrabold py-4' >Why Create a 3rdGB Selling Account ?</h1>
                 <p className='font-semibold px-7 flex gap-3 py-3'>There are endless reasons,So I will share a few.<FaPenFancy className='text-xl' /></p>
@@ -154,7 +181,7 @@ const Discount = () => {
 
               
               <div className="part2 py-4">
-              <div className="card card-compact bg-base-100 w-96 shadow-xl py-3 ">
+              <div className="card card-compact bg-base-100 w-96 shadow-xl py-3 dark:bg-[#1f4550]">
                 <figure>
                   <img
                     src={img3}
@@ -169,7 +196,7 @@ const Discount = () => {
                           </div>
                        </div>
                      </div>
-            <div className="card card-compact bg-base-100 w-96 shadow-xl py-3 mt-3">
+            <div className="card card-compact bg-base-100 w-96 shadow-xl py-3 mt-3 dark:bg-[#1f4550]">
                    <figure>
                      <img
                       src={img4}
@@ -185,7 +212,7 @@ const Discount = () => {
                    </div>
               </div>
            </div>
-           <div className="bg-[#f1efef] flex w-[95%] justify-between mt-[4%] mx-auto px-6 py-5 font-extrabold text-4xl text-blue-950">
+           <div className="bg-[#f1efef] flex w-[95%] justify-between mt-[4%] mx-auto px-6 py-5 font-extrabold text-4xl text-blue-950 dark:bg-[#1f4550] dark:text-white">
                <div className="div1 px-4 py-4 border-r-2 border-white">
                 <h1 className='justify-center flex'>#2,300,000+</h1>
                 < p className='text-xl font-semibold w-[350px]'>Average sales for Nigerian-based sellers monthly.</p>
@@ -201,7 +228,7 @@ const Discount = () => {
                </div>
             </div>
           </div>
-          <div className="getstarted bg-[#f1efef] w-[93%] mx-auto text-blue-950 rounded-xl">
+          <div className="getstarted bg-[#f1efef] w-[93%] mx-auto text-blue-950 rounded-xl dark:bg-[#1f4550] dark:text-white">
             <div className="ready flex justify-between px-5 py-4">
               <div className="gs1">
                 <h1 className='text-5xl font-extrabold'>Ready to get started ?</h1>
