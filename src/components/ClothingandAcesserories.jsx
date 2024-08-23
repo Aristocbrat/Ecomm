@@ -24,7 +24,7 @@ const ClothingandAcesserories = () => {
     <div>
       <Navbar/>
       <div className="headss font-extrabold sticky top-0 z-30 w-full bg-white  dark:bg-black dark:text-white ">
-        <h1 className='flex text-4xl justify-center py-5 gap-3'><GiTie /> Clothing & Acessorories <GiAmpleDress /></h1>
+        <h1 className='flex xl:text-4xl sm:text-xl justify-center py-5 gap-3'><GiTie /> Clothing & Acessorories <GiAmpleDress /></h1>
       </div>
       <div className="flex justify-center flex-wrap gap-12 mt-4 bg-[#1f4550]  dark:bg-black dark:text-white font-bold">
         {currentPosts.map((item, index) => (

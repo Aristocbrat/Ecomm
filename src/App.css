@@ -13,14 +13,7 @@
 ul {
     list-style: none;
   }
-  
-  .example-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    gap: 4.5rem;
-  }
+
   .example-2 .icon-content {
     margin: 0 10px;
     position: relative;
@@ -280,6 +273,12 @@ ul {
   100% {
     -webkit-transform: translateY(-400%);
     transform: translateY(-400%);
+  }
+}
+
+@media (min-width:480px) {
+  .eye a{
+    margin-top: 12px;
   }
 }
 

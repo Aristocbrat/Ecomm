@@ -12,8 +12,8 @@ const Itemcard = (props) => {
   const {addItem} = useCart();
   const {removeItem} = useCart();
   return (
-     <div className='flex flex-wrap gap-7 '>
-        <div className="card bg-[#1f4550] w-[350px] h-full text-white">
+     <div className=''>
+        <div className="card bg-[#1f4550] w-[350px] h-full text-white dl">
            <figure>
              <img src={props.img} className='hover:scale-125 duration-500' />
            </figure>

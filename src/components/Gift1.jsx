@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { FaChevronCircleDown } from "react-icons/fa";
+// import { FaChevronCircleDown } from "react-icons/fa";
 import { MdCelebration } from "react-icons/md";
 import { FcGlobe } from "react-icons/fc";
 import { FaGifts } from "react-icons/fa";
@@ -23,16 +23,15 @@ const Gift1 = () => {
     <div>
       <Navbar/>
       <section className='sticky  top-0  z-30 '>
-        <div className="seminav flex gap-20  bg-white  dark:bg-black dark:text-white  px-7  py-4 w-full">
-            <a href="#" className='font-bold hover:underline text-blue-950 dark:text-white text-xl'>Find & Create (Gifting)</a>
+        <div className="seminav flex xl:gap-20 sm:gap-4 bg-white  dark:bg-black dark:text-white  xl:px-7 sm:px-4 py-4 w-full">
+            <a href="#" className='font-bold hover:underline text-blue-950 dark:text-white xl:text-xl'>Find & Create (Gifting)</a>
             <div className="dropdown dropdown-hover">
-              <div tabIndex={0} role="button" className=" flex gap-3 font-semibold">Find a Gift-List<FaChevronCircleDown className='text-xl '/></div>
-                <ul tabIndex={0} className="dropdown-content menu bg-[#F7F9F2] rounded-box z-[1] w-42 text-blue-950  font-semibold p-2 shadow">
-                   <li><a>Children Gifts</a></li>
-                    <li><a>Wedding Gifts</a></li>
-                    <li><a>Graduation Gifts</a></li>
-                    <li><a>Birthday Gifts</a></li>
-                    <li><a>See more <i className="ri-arrow-down-s-line"></i></a></li>
+              <div tabIndex={0} role="button" className=" flex  font-semibold">Find a Gift-List</div>
+                <ul tabIndex={0} className="dropdown-content menu bg-[#F7F9F2] rounded-box z-[1] xl:w-32 sm:w-20 text-blue-950  font-semibold p-2 shadow">
+                   <li className='ml-[-10px]'><a>Children Gifts</a></li>
+                    <li className='ml-[-10px]'><a>Wedding Gifts</a></li>
+                    <li className='ml-[-18px]'><a>Graduation</a></li>
+                    <li className='ml-[-10px]'><a>Birthday Gifts</a></li>
                  </ul>
               </div>
          <div className="dropdown dropdown-hover">
@@ -47,10 +46,10 @@ const Gift1 = () => {
       </section>
       <section className='mt-2 py-7' >
         <img src={img1} className='w-full h-[400px] object-cover' alt="" />
-        <div className="bg-white w-[700px] h-[190px] mx-auto rounded-2xl relative z-10 mt-[-3%] dark:text-black">
-             <h1 className='py-4 mx-auto flex justify-center font-extrabold text-5xl gap-3'> <MdCelebration /> Unwrap Joy </h1>
-             <p className='ml-[8%] text-xl font-semibold w-[86%] px-4'>For Weddings , Birthdays , Graduations or any Life-event we got you covered .</p>
-             <p className='ml-[32%] text-xl font-semibold'>We ensure the perfect gifts</p>
+        <div className="bg-white xl:w-[700px] h-[190px] mx-auto rounded-2xl relative z-10 mt-[-3%] dark:text-black">
+             <h1 className='py-4 mx-auto flex justify-center font-extrabold xl:text-5xl  sm:text-xl gap-3'> <MdCelebration /> Unwrap Joy </h1>
+             <p className='ml-[8%] xl:text-xl text-[13px] font-semibold w-[86%] px-4'>For Weddings , Birthdays , Graduations or any Life-event we got you covered .</p>
+             <p className='ml-[32%] xl:text-xl text-[13px] font-semibold'>We ensure the perfect gifts</p>
              <button className='btn bg-yellow-400 text-white ml-[38%] mt-2'>Create a gift list</button>
         </div>    
       </section>
@@ -75,19 +74,21 @@ const Gift1 = () => {
       
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
+        className="menu menu-sm dropdown-content bg-[#1f4550] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        
         <li>
-          <a>Parent</a>
+          <a>Gift-List</a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+          <li><a>Children Gifts</a></li>
+            <li><a>Wedding Gifts</a></li>
+            <li><a>Graduation Gifts</a></li>
+            <li><a>Birthday Gifts</a></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Find a Gift-List</a>
+    <a className="btn btn-ghost text-xl">Find</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -117,7 +118,7 @@ const Gift1 = () => {
 
 
       <div className="learn">
-        <h1 className='flex justify-center text-3xl font-bold'>Learn More about our Gift-List </h1>
+        <h1 className='flex justify-center xl:text-3xl sm:text-xl font-bold'>Learn More about our Gift-List </h1>
 
         <div className="learncard flex justify-evenly flex-wrap mt-6">
            <div  className="relative drop-shadow-xl w-48 h-64 overflow-hidden rounded-xl bg-[#3d3c3d]">
@@ -147,7 +148,7 @@ const Gift1 = () => {
    </div>
   </div>
 <div className="reasonsto px-5 mt-4 py-4">
-    <h1 className='text-4xl font-bold px-3 text-blue-950 dark:text-white'>Reasons to with register 3rdGB</h1>
+    <h1 className='xl:text-4xl sm:text-xl font-bold px-3 text-blue-950 dark:text-white'>Reasons to with register 3rdGB</h1>
     <div className="reasoncard flex flex-wrap gap-9 py-5 ">
     <div className="card bg-base-100 w-96 shadow-xl">
         <div className="card-body dark:text-black">
@@ -169,8 +170,8 @@ const Gift1 = () => {
         </div>
       </div>
     <div className="reasonend py-3">
-      <h1 className='text-3xl font-bold px-3 text-blue-950  dark:bg-black dark:text-white'>Make Your Registry Unique to You</h1> 
-      <div className="reasonendcards flex flex-wrap justify-between px-6 mt-6 py-5 text-blue-950 font-bold dark:text-white ">
+      <h1 className='xl:text-3xl sm:text-xl font-bold px-3 text-blue-950  dark:bg-black dark:text-white'>Make Your Registry Unique to You</h1> 
+      <div className="reasonendcards flex flex-wrap justify-between px-6 ml-7 mt-6 py-5 text-blue-950 font-bold dark:text-white ">
     
          <div className="group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_15deg)]
                  duration-500 overflow-hidden  p-6 rounded-lg hover:shadow-lg [box-shadow:12px_12px_0px_0px_#0d0d0d] 

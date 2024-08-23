@@ -13,6 +13,7 @@ import ClothingandAcesserories from './components/ClothingandAcesserories';
 import Sporty from './components/Sporty';
 import Furniture from './components/Furniture';
 import Wishlist from './components/wishlist/Wishlist';
+import Shop from './components/subpage/Shop';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
      <Route path='/Sporty' element={<Sporty/>}/>
      <Route path='/Furniture' element={<Furniture/>}/>
      <Route path='/Wishlist' element={<Wishlist/>}/>
+     <Route path='/Shop' element={<Shop/>}/>
       </Routes>
       </CartProvider>
       </div> 

@@ -100,7 +100,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#1f4550] dark:bg-black dark:text-white py-3 border-b-2 border-white'>
-      <div className="menu flex flex-row justify-between  px-4 ">
+      <div className="menu flex flex-row xl:justify-between sm:justify-evenly xl:px-4 sm:px-1 ">
         <div className="logo font-bold text-white flex  ">
             <h1 className='text-4xl'><a href="/">
              <i className="ri-price-tag-3-fill"></i>
@@ -114,18 +114,19 @@ const Navbar = () => {
         <div className="search">
          <input type="search" 
           placeholder='Search'
-          className='w-[300px] h-11 bg-gray-400 placeholder:text-white text-center placeholder:opacity-75 font-bold' />
-         <a href="" className='bg-orange-600 p-3 rounded-r-lg hover:bg-orange-700 duration-700'>
+          className='w-[200px] h-11 bg-gray-400 placeholder:text-white text-center placeholder:opacity-75 font-bold form-control rounded-lg ' />
+         <a href="" className=' py-[9px] px-2  hover:scale-105 duration-700 absolute xl:mt-[-3.4%] sm:mt-[-11%] eye'>
           <i className="ri-search-eye-line text-white text-xl"></i></a>
          </div>
 
 
-       <div className="signin bg-[#73b2c4] shadow-slate-950 text-white px-2 py-1 rounded-lg cursor-pointer font-bold">
+       <div className="signin bg-[#73b2c4] shadow-slate-950 text-white px-2 py-1 rounded-lg cursor-pointer font-bold sm:hidden xl:block">
        <p>Hello & Welcome</p>
        <p>Accounts & Lists
          <span><i className="ri-arrow-down-s-fill text-xl animate-pulse" onClick={() => setIsOpenDropdownOpen((prev) => !prev)}></i></span></p>
        {opendropDown && (
-        <div className="hoverdrop w-[200px] bg-[#73b2c4]   dark:bg-black dark:text-white text-white top-[75px] z-50 absolute border-2 flex flex-col rounded-[15px] py-3 text-[14px]">
+        <div className="hoverdrop w-[180px] bg-[#73b2c4]   dark:bg-black dark:text-white text-white top-[75px] 
+         z-50 absolute border-2 flex flex-col rounded-[15px] py-3 text-[14px]">
           <button className="py-1 ml-3  text-white hover:scale-110  duration-300 ">
             Sign-in
           </button>
@@ -160,62 +161,64 @@ const Navbar = () => {
           </p>
         </div>
       )}
-</div>
-<div className="cart text-white py-1 flex">
-<div className="tooltip text-white  tooltip-bottom font-bold " 
+     </div>
+      <div className="cart text-white py-1 flex">
+    <div className="tooltip text-white  tooltip-bottom font-bold " 
         data-tip="Welcome customer">
         <button className="">
         <i className="ri-user-fill text-3xl"></i>
     </button>
-</div>
+    </div>
       <input type="checkbox" className="toggle mt-2 ml-2" defaultChecked checked={darkMode}  onChange={() => setDarkMode(!darkMode)} />
       </div>
-
-<div className="hamburger text-white text-5xl py-1">
-<RiMenu5Fill />
-        </div>
 </div>
 
 
-<div className="nav2 bg-[#1f4550] dark:bg-black dark:text-white flex justify-between text-white font-bold border-white border-t-2 ">
+<div className="nav2 bg-[#1f4550] dark:bg-black dark:text-white flex flex-wrap justify-between
+ text-white font-bold border-white border-t-2 ">
         <div className="all flex gap-1 px-4">
         <div className="dropdown dropdown-hover">
            <div tabIndex={0} role="button" className="py-2"><CiMenuBurger className='text-3xl font-bold text-white' /></div>
           <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[40] w-50 p-2 border-white border-2 shadow">
-          <li><a><MdOutlinePayment /> Payment</a></li>
+          <li><a href='/'><MdOutlinePayment /> Payment</a></li>
           <hr  className='p-1 border-white'/>
-          <li><a><FaBagShopping /> Shop</a></li>
+          <li><a href='/Shop'><FaBagShopping /> Shop</a></li>
           <hr  className='p-1 border-white'/>
-          <li><a><RiCustomerService2Fill />Customer service</a></li>
+          <li><a href=''><RiCustomerService2Fill />Customer service</a></li>
           <hr  className='p-1 border-white'/>
-         <li><a><MdComputer /> Online service</a></li>
+         <li><a href='/'><MdComputer /> Online service</a></li>
          <hr  className='p-1 border-white'/>
-         <li><a><IoSettings />Settings</a></li>
+         <li><a href='/'><IoSettings />Settings</a></li>
         </ul>
       </div>
-        <h1 className='text-2xl ps-2 py-1'>All</h1>
      </div>
          
-         <div className="Nav3 flex gap-8 text-[13px] px-4 py-2 ">
-            <a href="/" className='hover:underline hover:scale-105 py-1'>Home</a>
-            <a href="/Cart" className='hover:underline hover:scale-105'><i className="ri-shopping-cart-line text-lg"></i>Cart ({totalItems})</a>
+         <div className="Nav3 flex xl:gap-8 sm:gap-4 text-[13px] xl:px-4 sm:px-2  py-2 ">
+            <a href="/" className='hover:underline hover:scale-105 py-1'><span>Home</span></a>
+            <a href="/Cart" className='hover:underline hover:scale-105 flex'><i className="ri-shopping-cart-line text-lg"></i>
+            <span className='sm:hidden xl:block mt-1'>Cart</span>
+            <span className='xl:ml-0 mt-1 '>({totalItems})</span></a>
              <a href="#"><div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="flex gap-2 py-1"><BiCategory className='text-xl'  />Category</div>
-             <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[50] w-32 p-2 shadow">
-                <li className='hover:underline duration-500'><a href='/BeautyandSkincare'>Beauty & Skincare</a></li>
-                <hr className="p-1 border-white" />
-                 <li className='hover:underline duration-500'><a href='/ClothingandAcesserories'>Clothing & Accessories</a></li>
-                 <hr className="p-1 border-white" />
-                 <li className='hover:underline duration-500'><a href='/Electronics'>Electronics</a></li>
-                 <hr className="p-1 border-white" />
-                 <li className='hover:underline duration-500'><a href='/Sporty'>Sports & Outdoors</a></li>
-                 <hr className="p-1 border-white" />
-                 <li className='hover:underline duration-500'><a href='/Furniture'>Furnitures & Interior</a></li>
+            <div tabIndex={0} role="button" className="flex  py-1 "><BiCategory className='text-xl '  />
+            <span className='sm:hidden xl:block'>Category</span>
+            </div>
+             <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white 
+             rounded-box z-[50] xl:w-20 sm:w-20 p-2  xl:text-[] sm:text-[12px]">
+                <li className='hover:underline duration-500 ml-[-10px] mt-3'><a href='/BeautyandSkincare'>Beauty & Skincare</a></li>
+                <hr className="p-1 border-white sm:w-16" />
+                 <li className='hover:underline duration-500 ml-[-14px]'><a href='/ClothingandAcesserories'>Clothing & Accessories</a></li>
+                 <hr className="p-1 border-white sm:w-16" />
+                 <li className='hover:underline duration-500 ml-[-12px]'><a href='/Electronics'>Electronics</a></li>
+                 <hr className="p-1 border-white sm:w-16" />
+                 <li className='hover:underline duration-500 ml-[-10px]'><a href='/Sporty'>Sports & Outdoors</a></li>
+                 <hr className="p-1 border-white sm:w-16" />
+                 <li className='hover:underline duration-500 ml-[-10px]'><a href='/Furniture'>Furnitures & Interior</a></li>
                  </ul>
                </div></a>
             <a href="/Bestsellers" className='hover:underline hover:scale-105 py-1'>BestSellers</a>
             <a href="#"><div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="flex gap-2 py-1"><CiGift className='text-xl'/>Gift List</div>
+            <div tabIndex={0} role="button" className="flex gap-2 py-1"><CiGift className='text-xl '/>
+            <span className='sm:hidden xl:block'>Gift</span></div>
              <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[50] w-24 p-2 shadow border-2 border-white">
                 <li><a href='/Gift1' className='hover:underline'>Find & Create</a></li>
                 <hr className="p-1 border-white" />

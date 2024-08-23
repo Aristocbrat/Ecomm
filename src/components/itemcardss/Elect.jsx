@@ -19,7 +19,7 @@ const Elect = (El) => {
     <figure className="px-10 pt-10">
        <img
        src={El.img}
-alt="Electronics"
+       alt="Electronics"
 className="rounded-xl dl object-cover hover:scale-125 duration-500 object-center" />
 </figure>
 <div className="card-body items-center text-center">

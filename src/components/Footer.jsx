@@ -123,7 +123,7 @@ const Footer = () => {
             <div className="backtotop w-full bg-[#13282eb9] border-l-0 border-r-0 border-white border-b-2">
                  <a href="" className='flex justify-center py-3 hover:underline hover:scale-90 duration-300 '>Back to top</a>
             </div>
-             <div className="footext flex justify-center py-7 gap-16 border-b-2 border-white  ">
+             <div className="footext flex justify-center py-7 xl:gap-16 sm:gap-6 border-b-2 border-white flex-wrap ">
                 <ul className='w-[16%]'>
                     <h1>Get to Know Us</h1>
                     <li className='text-[13px] py-1'><a href="">Careers</a></li>
@@ -162,14 +162,15 @@ const Footer = () => {
                     <li className='text-[13px] py-1 hover:underline'><a href="">Help</a></li>
                 </ul>
              </div>
-             <div className="langhead flex justify-center py-4 gap-7 border-b-2 border-white">
-                  <h1 className='text-4xl px-5'> <i class="ri-price-tag-3-fill"></i>3rdGB</h1>
+             <div className="langhead flex justify-center py-4 xl:gap-7 gap-2 border-b-2 border-white">
+                  <h1 className='xl:text-4xl sm:text-2xl xl:px-5'> <i class="ri-price-tag-3-fill"></i>3rdGB</h1>
                   <CustomDropdown/>
-                  <span className='pt-3'>Shop from </span>
+                  <span className='pt-3 sm:hidden
+                   xl:block'>Shop from </span>
                   <CustomDropdown2/>
              </div>
              <div className="footerlast bg-[#13282eb9]  dark:bg-black dark:text-white py-8">
-      <div className="ftlast flex justify-center gap-12 flex-wrap mt-5 w-[75%] items-center mx-auto">
+      <div className="ftlast flex justify-center  gap-12 flex-wrap mt-5 w-[75%] items-center mx-auto">
          <ul className='hover:underline w-30'>
             <h1 className='text-xl'>3rdGB Music</h1>
             <li className='font-thin text-[12px]'><a href="">Stream millions of Songs</a></li>
@@ -233,7 +234,7 @@ const Footer = () => {
             <li className='font-thin text-[12px]'><a href="">Business Guides</a></li>
          </ul>
          </div>
-         <div className="linksf flex text-[12px] py-7 gap-6 w-[60%] mx-auto mt-4 ">
+         <div className="linksf flex text-[12px] py-7 xl:gap-6 sm:gap-4 sm:px-7  flex-wrap xl:w-[60%] mx-auto mt-4 ">
           <a href="" className='hover:underline'>Condition of use</a>
           <a href="" className='hover:underline'>Privacy Notice</a>
           <a href="" className='hover:underline'>Your ADs Privacy</a>
@@ -241,7 +242,7 @@ const Footer = () => {
           <a href="" className='hover:underline'>Customers Complaints</a>
           <a href="" className='hover:underline'>Customer Care</a>
          </div>
-         <div className="date flex justify-center gap-3 mt-8 text-[12px]">
+         <div className="date flex justify-center gap-3   mt-8 text-[12px]">
          <i className="ri-copyright-line"></i>
          <span>3rdGB Group Inc</span>
          <span id='year'> </span>
