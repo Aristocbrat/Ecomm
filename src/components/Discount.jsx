@@ -23,6 +23,8 @@ import img8 from "../assets/images/new.jpg"
 import img9 from "../assets/images/team2.jpg"
 import img10 from "../assets/images/team1.jpg"
 import img11 from "../assets/images/mn1.jpg"
+import Nav from './Nav';
+import Nav2 from './Nav2';
 
 const Discount = () => {
   const [message, setMessage] = useState('');
@@ -32,8 +34,9 @@ const Discount = () => {
   };
 
   return (
-    <div className='w-full'>
-       <Navbar />
+    <div className='w-full overflow-hidden '>
+      <Nav/>
+      <Nav2/>
        <div className="regis sticky top-[0%] z-20 w-full bg-white  dark:bg-black dark:text-white flex justify-between xl:px-7 sm:px-2 py-4">
   <h1 className='xl:text-3xl sm:text-[12px] font-bold sm:mt-2'>Sell with 3rdGB</h1>
   <h1 className='flex py-2 font-semibold sm:text-[10px] xl:text-lg xl:w-[250px] sm:w-[150px]'>
@@ -49,7 +52,7 @@ const Discount = () => {
 
           <div className="main mt-8 py-4 bg-[#f1efef] dark:bg-[#1f4550]  [clip-path:ellipse(900px_400px_at_10%_9%)] w-full">
              <h1 className='xl:text-7xl sm:text-2xl px-4 py-3 xl:w-[800px] sm:w-[90%] font-bold ms-7'>Create a 3rdGB seller's account</h1>
-             <p className='xl:text-xl sm:text-[10px] font-bold px-3 ms-9'>Sell with the fastest-growing & preferred acquisition channel.</p>
+             <p className='xl:text-xl sm:text-[10px] xl:w-[400px] sm:w-[50%]  font-bold px-3 ms-9'>Sell with the fastest-growing & preferred acquisition channel.</p>
              <button className='flex bg-yellow-500  px-12 py-3 ms-20 mt-5 text-white font-bold rounded-full  hover:bg-slate-600  hover:scale-90 duration-300 hover:text-white'>Sign Up</button>
             <p className='text-[11px] px-9 font-semibold ms-10'>#2,500 a month + selling fees</p>
           </div>
@@ -66,10 +69,10 @@ const Discount = () => {
             <div className="inc mt-2 flex xl:flex-row sm:flex-col gap-2 px-5 sm:ml-9">
               <img src={img1} alt="" className='w-[300px] rounded-b-full object-cover' />
               <img src={img2} alt="" className='w-[300px] rounded-t-full object-cover'/>
-            <div className="inctext mt-10 ml-4">
+            <div className="inctext mt-10 xl:ml-4">
                <h1 className='xl:text-6xl font-bold pb-4'>Get started with #50,000 in Incentive</h1>
                <p className='xl:w-[590px] sm:w-[90%] font-bold'>Ready to sell with 3rdGB ? Well get ready to have your mind blown with Our Series of Incentives.</p>
-               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 ml-[-9%] rounded-lg mt-5">
+               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 ml-[-9%] rounded-lg mt-5 w-[89%]">
                 <ul>
                   <li className='py-2 flex gap-2'><FaCheck /> <span className='font-bold'>10% back</span>on your first #50,000 on branded sales. </li>
                   <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>5% back </span> through your first year until you reach #1,000,000. </li>
@@ -80,7 +83,7 @@ const Discount = () => {
                </div>
             </div>
             </div>
-            <div className="ske xl:ml-[7%] sm:ml-[24%] mt-9 flex gap-[98px] flex-wrap dark:text-black">
+            <div className="ske xl:ml-[7%] sm:ml-[15%] xl:w-full sm:w-[70%] sm:px-4 mt-9 flex gap-[98px] flex-wrap dark:text-black ">
             <div className="flex w-52 flex-col gap-4 ">
                   <div className="skeleton h-32 w-full">
                       <img src={img8} alt="" className='w-[100px] rounded-full h-[100px] object-cover mx-auto py-1 hover:scale-110 duration-300 ' />
@@ -89,7 +92,7 @@ const Discount = () => {
                   <div className="skeleton h-6 w-28">
                     <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Pro</h1>
                   </div>
-                  <div className="skeleton h-20 w-full">
+                  <div className="skeleton h-24 w-full">
                   <p className='text-[13px] font-bold px-3 py-2'>It helps you grow your career and make new connections, I love this progam alot.</p>
                   </div>
               </div>
@@ -102,7 +105,7 @@ const Discount = () => {
                   <div className="skeleton h-6 w-28">
                   <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Veteran</h1>
                   </div>
-                  <div className="skeleton h-20 w-full">
+                  <div className="skeleton h-24 w-full">
                   <p className='text-[13px] font-bold px-3 py-2'>The fact that i can pick the type of sales plan i want is super amazing .</p>
                   </div>
               </div>
@@ -115,7 +118,7 @@ const Discount = () => {
                   <div className="skeleton h-6 w-28">
                   <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Regular</h1>
                   </div>
-                  <div className="skeleton h-20 w-full">
+                  <div className="skeleton h-24 w-full">
                   <p className='text-[13px] font-bold px-3 py-2'>I have made a lot of decisions but this has been one of best of my Sales career .</p>
                   </div>
               </div>
@@ -128,7 +131,7 @@ const Discount = () => {
                   <div className="skeleton h-6 w-28">
                   <h1 className='font-extrabold text-[13px] flex justify-center'><RiDiscountPercentFill className='mt-1 text-green-500' />Newbie</h1>
                   </div>
-                  <div className="skeleton h-20  w-full">
+                  <div className="skeleton h-24  w-full">
                     <p className='text-[13px] font-bold px-3 py-2'>This has been a very helpful experience & i am working to be a pro.</p>
                   </div>
               </div>

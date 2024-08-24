@@ -8,11 +8,14 @@ import ClothingBs from './itemcardss/Clothing';
 import productdata4 from './datasfolder/Data4';
 import Furn from './itemcardss/Furn';
 import Sportbs from './itemcardss/Sportbs';
+import Nav from './Nav';
+import Nav2 from './Nav2';
 
 const Bestsellers = () => {
   return (
     <div>
-     <Navbar/>
+    <Nav/>
+    <Nav2/>
      <div className="hes bg-[#162b30]  dark:bg-black dark:text-white">
         <div className="hestext text-white flex justify-between px-5">
             <h1 className='xl:text-4xl font-bold py-3' ><i className="ri-price-tag-3-fill"></i>Shop here for the right price</h1>

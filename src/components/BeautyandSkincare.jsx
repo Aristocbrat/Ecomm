@@ -6,6 +6,8 @@ import Pagination from './paginations/Pagination';
 import { GiLips, GiLipstick } from "react-icons/gi";
 import productdata6 from './datasfolder/Data6';
 import Btsk from './itemcardss/Btsk';
+import Nav from './Nav';
+import Nav2 from './Nav2';
 
 const BeautyandSkincare = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,7 +25,8 @@ const BeautyandSkincare = () => {
 
   return (
     <div>
-      <Navbar />
+      <Nav/>
+      <Nav2/>
       <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">
         <h1 className='font-extrabold xl:text-4xl sm:text-xl flex justify-center py-5 gap-3 '>
           <GiLipstick className='text-red-600 mt-1 ' />

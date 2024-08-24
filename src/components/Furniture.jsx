@@ -6,6 +6,8 @@ import Footer from './Footer';
 import { MdChair } from "react-icons/md";
 import { MdTableBar } from "react-icons/md";
 import Furnint from './itemcardss/Furnint';
+import Nav from './Nav';
+import Nav2 from './Nav2';
 
 const Furniture = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -20,9 +22,10 @@ const Furniture = () => {
 
       const paginate = (pageNumber) => setCurrentPage(pageNumber); 
   return (
-    <div>
-        <Navbar/>
-        <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">
+    <div className='overflow-hidden'>
+      <Nav/>
+      <Nav2/>
+       <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">
         <h1 className='font-extrabold xl:text-4xl sm:text-xl flex justify-center py-5 gap-3 '>
         <MdChair />
          Furnitures & Interior

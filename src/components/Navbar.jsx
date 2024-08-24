@@ -13,6 +13,9 @@ import france from "./../assets/images/france.png"
 import germany from "./../assets/images/germany.png"
 import uk from "./../assets/images/united-kingdom.png"
 import spain from "./../assets/images/spain.png"
+import { GiImperialCrown } from "react-icons/gi";
+import { FaHome } from "react-icons/fa";
+import { MdSell } from "react-icons/md";
 
 const Navbar = () => {
     const CustomDropdown = () => {
@@ -100,7 +103,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#1f4550] dark:bg-black dark:text-white py-3 border-b-2 border-white'>
-      <div className="menu flex flex-row xl:justify-between sm:justify-evenly xl:px-4 sm:px-1 ">
+      <div className="menu flex flex-row xl:justify-between sm:justify-evenly xl:px-4 sm:px-1 bg-green-500 ">
         <div className="logo font-bold text-white flex  ">
             <h1 className='text-4xl'><a href="/">
              <i className="ri-price-tag-3-fill"></i>
@@ -114,7 +117,7 @@ const Navbar = () => {
         <div className="search">
          <input type="search" 
           placeholder='Search'
-          className='w-[200px] h-11 bg-gray-400 placeholder:text-white text-center placeholder:opacity-75 font-bold form-control rounded-lg ' />
+          className='xl:w-[200px] sm:w-[150px] h-11 bg-gray-400 placeholder:text-white text-center placeholder:opacity-75 font-bold form-control rounded-lg ' />
          <a href="" className=' py-[9px] px-2  hover:scale-105 duration-700 absolute xl:mt-[-3.4%] sm:mt-[-11%] eye'>
           <i className="ri-search-eye-line text-white text-xl"></i></a>
          </div>
@@ -194,10 +197,14 @@ const Navbar = () => {
      </div>
          
          <div className="Nav3 flex xl:gap-8 sm:gap-4 text-[13px] xl:px-4 sm:px-2  py-2 ">
-            <a href="/" className='hover:underline hover:scale-105 py-1'><span>Home</span></a>
+            <a href="/" className='hover:underline hover:scale-105 py-1 flex'><FaHome className='text-xl ' />
+            <span className='sm:hidden xl:block'>Home</span></a>
+
             <a href="/Cart" className='hover:underline hover:scale-105 flex'><i className="ri-shopping-cart-line text-lg"></i>
             <span className='sm:hidden xl:block mt-1'>Cart</span>
             <span className='xl:ml-0 mt-1 '>({totalItems})</span></a>
+
+
              <a href="#"><div className="dropdown dropdown-hover">
             <div tabIndex={0} role="button" className="flex  py-1 "><BiCategory className='text-xl '  />
             <span className='sm:hidden xl:block'>Category</span>
@@ -215,9 +222,10 @@ const Navbar = () => {
                  <li className='hover:underline duration-500 ml-[-10px]'><a href='/Furniture'>Furnitures & Interior</a></li>
                  </ul>
                </div></a>
-            <a href="/Bestsellers" className='hover:underline hover:scale-105 py-1'>BestSellers</a>
+            <a href="/Bestsellers" className='hover:underline hover:scale-105 py-1 flex '><GiImperialCrown className='text-xl '/>
+            <span  className='sm:hidden xl:block'>BestSellers</span> </a>
             <a href="#"><div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="flex gap-2 py-1"><CiGift className='text-xl '/>
+            <div tabIndex={0} role="button" className="flex  py-1"><CiGift className='text-xl '/>
             <span className='sm:hidden xl:block'>Gift</span></div>
              <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[50] w-24 p-2 shadow border-2 border-white">
                 <li><a href='/Gift1' className='hover:underline'>Find & Create</a></li>
@@ -225,7 +233,8 @@ const Navbar = () => {
                  <li><a href='#' className='hover:underline'>Apply</a></li>
                 </ul>
                </div></a>
-            <a href="/Discount" className='hover:underline hover:scale-105 py-1'>Sell</a>
+            <a href="/Discount" className='hover:underline hover:scale-105 py-1 flex'><MdSell className='text-xl ' />
+            <span className='sm:hidden xl:block'>Sell</span> </a>
           
             
           

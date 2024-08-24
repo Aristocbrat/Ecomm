@@ -3,7 +3,7 @@ import img1 from './../../assets/images/teach2.jpg'
 import img2 from './../../assets/images/myface.jpg'
 const Avatar = () => {
   return (
-    <div className='mt-8  px-6'>
+    <div className='mt-8  px-6 '>
      <div className="avatar-group -space-x-6 rtl:space-x-reverse ml-5">
   <div className="avatar">
     <div className="w-12">
