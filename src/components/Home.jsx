@@ -32,13 +32,14 @@ const Home = () => {
          {/* <Navbar /> */}
          <Nav/>
          <Nav2/>
-         <div className="backg" style={{
+         <div className="backg rounded-b-3xl" style={{
           backgroundImage:`url(${img1})`, 
           backgroundPosition:'center',
           width:"100%",
           backgroundSize:"cover",
           height:'390px',
-          opacity:""
+          opacity:"",
+          
          }}>
           
          <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-3xl font-extrabold py-4 text-gray-600 flex xl:ml-6'>Welcome to <IoMdPricetag />3rdGB</h1>
@@ -69,7 +70,7 @@ const Home = () => {
           <section>
             <div className="headi flex xl:gap-20 sm:gap-4 justify-center px-6 py-4 sticky top-0 w-full z-20 bg-[#538faf] dark:bg-[#1f4550]">
             <h1 className='xl:text-5xl font-bold text-white  py-4 flex xl:gap-3'>Today's Deals <IoCalendarNumberSharp className='xl:mt-0 sm:mt-1'/></h1>
-            <h1 className='xl:text-5xl font-bold text-white  py-4 flex'><GiCampfire className='text-yellow-300 xl:mt-0 sm:mt-1'/> Hottest Deals</h1>
+            <h1 className='xl:text-5xl font-bold text-white  py-4 flex'><GiCampfire className='text-yellow-300 xl:mt-0 sm:mt-1 animate-pulse duration-500'/> Hottest Deals</h1>
             <h1 className='xl:text-5xl font-bold text-white  py-4 flex'><FaRegSmileWink className='xl:mt-0 sm:mt-1'/> Best Deals</h1>
             <img src={tdimg} alt=""  className='w-[100px] sm:hidden sm:h-[70px] h-[100px]  object-fill hover:rotate-[360deg] duration-500'/>
             </div>

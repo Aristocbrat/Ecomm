@@ -75,16 +75,16 @@ const Nav = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-blue-950 rounded-box z-[1] mt-3 xl:w-56 sm:w-44 p-2 shadow">
-        <li><a>Item 1</a></li>
+        className="menu menu-sm dropdown-content bg-[#1f4550] rounded-box z-[1] mt-3 xl:w-56 dark:bg-black sm:w-44 p-2 shadow">
+        <li><a href='#'>Sign in</a></li>
         <li>
-          <a>Parent</a>
+          <a></a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href="#">Payment Plan <i className="ri-bank-card-line"></i></a></li>
+            <li><a href="#">Delivery <i className="ri-truck-line"></i></a></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        <li><a href='#'> Log Out <i className="ri-logout-circle-line"></i></a></li>
         <div className="search xl:hidden sm:block ">
          <input type="search" 
           placeholder='Search'
@@ -107,13 +107,13 @@ const Nav = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+      <li></li>
       <li>
         <details>
-          <summary>Parent</summary>
+          <summary><a href="#">Subscription</a></summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li></li>
+            <li></li>
           </ul>
         </details>
       </li>

@@ -6,6 +6,8 @@ import { RiSubtractFill } from "react-icons/ri";
 import { MdCancel } from "react-icons/md";
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Nav from './Nav';
+import Nav2 from './Nav2';
 const Cart = () => {
  const [emptyWishlist,] = useState(0);
     const {
@@ -16,12 +18,13 @@ const Cart = () => {
       cartTotal,
       updateItemQuantity,
       removeItem,
-     
+      emptyCart
       
     } = useCart()
     if(isEmpty) return (
       <div>
-        <Navbar/>
+        <Nav/>
+        <Nav2/>
         <h1 className='font-bold text-3xl flex justify-center'>
           <PiMaskSadBold  className='text-4xl'/> Your Cart is empty
         </h1>
@@ -31,7 +34,8 @@ const Cart = () => {
     
   return (
     <div>
-      <Navbar/>
+      <Nav/>
+      <Nav2/>
        <div className="main">
          <section className='container px-5'>
           <h3 className='font-bold text-3xl py-4 mx-auto'>Cart({totalUniqueItems}) Total Items : ({totalItems})</h3>
@@ -61,7 +65,7 @@ const Cart = () => {
            <h1>Total Price =# {cartTotal} </h1>
          </div>
          <div className="em flex justify-center text-xl font-bold">
-           <button className='btn bg-slate-600 text-white' onClick={()=> emptyWishlist()}>Clear Cart</button>
+           <button className='btn bg-slate-600 text-white' onClick={()=> emptyCart()}>Clear Cart</button>
            <button className='btn bg-slate-600 text-white'>PayNow</button>
          </div>
        </div>
