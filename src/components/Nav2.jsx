@@ -16,7 +16,7 @@ import { MdSell } from "react-icons/md";
 const Nav2 = () => {
     const {totalItems , totalWish} = useCart();
   return (
-    <div>
+    <div className='overflow-hidden'>
       <div className="nav2 bg-[#1f4550] dark:bg-black dark:text-white flex flex-wrap justify-between
  text-white font-bold border-white border-t-2 w-full">
         <div className="all flex gap-1 px-4">

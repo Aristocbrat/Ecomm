@@ -22,7 +22,7 @@ const Sporty = () => {
 
       const paginate = (pageNumber) => setCurrentPage(pageNumber); 
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Nav/>
         <Nav2/>
         <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">

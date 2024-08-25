@@ -30,7 +30,7 @@ const Footer = () => {
           };
     
           return (
-            <div className="relative inline-block w-23 text-white">
+            <div className="relative inline-block w-23 text-white overflow-hidden">
               <div 
                 className="flex items-center gap-2 p-2 border border-gray-300 rounded cursor-pointer" 
                 onClick={toggleDropdown}

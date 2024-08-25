@@ -66,7 +66,7 @@ const Nav = () => {
     }
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <div className="navbar bg-[#1f4550] dark:bg-black  text-white">
   <div className="navbar-start">
     <div className="dropdown">
