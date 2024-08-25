@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 .pd img , .cl img,.sp img ,.dl img{
     width: 100%;

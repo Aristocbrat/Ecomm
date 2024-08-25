@@ -121,7 +121,7 @@ const Footer = () => {
                 <p className='flex justify-center py-2 text-[14px]'>New Customer? <span className='text-[12px] ps-2 hover:underline'><a href="#"> Start here</a></span></p>
             </div>
             <div className="backtotop w-full bg-[#13282eb9] border-l-0 border-r-0 border-white border-b-2">
-                 <a href="" className='flex justify-center py-3 hover:underline hover:scale-90 duration-300 '>Back to top</a>
+                 <a href="#top" className='flex justify-center py-3 hover:underline hover:scale-90 duration-300 '>Back to top</a>
             </div>
              <div className="footext flex justify-center py-7 xl:gap-16 sm:gap-6 border-b-2 border-white flex-wrap ">
                 <ul className='w-[16%]'>
@@ -163,15 +163,15 @@ const Footer = () => {
                 </ul>
              </div>
              <div className="langhead flex justify-center py-4 xl:gap-7 gap-2 border-b-2 border-white">
-                  <h1 className='xl:text-4xl sm:text-2xl xl:px-5'> <i class="ri-price-tag-3-fill"></i>3rdGB</h1>
+                  <h1 className='xl:text-4xl sm:text-2xl sm:mt-1 xl:mt-0 xl:px-5'> <i class="ri-price-tag-3-fill"></i>3rdGB</h1>
                   <CustomDropdown/>
                   <span className='pt-3 sm:hidden
                    xl:block'>Shop from </span>
                   <CustomDropdown2/>
              </div>
              <div className="footerlast bg-[#13282eb9]  dark:bg-black dark:text-white py-8">
-      <div className="ftlast flex justify-center  gap-12 flex-wrap mt-5 w-[75%] items-center mx-auto">
-         <ul className='hover:underline w-30'>
+      <div className="ftlast flex xl:justify-center justify-between px-7  xl:gap-12 sm:gap-6 flex-wrap mt-5 xl:w-[75%] sm:w-[100%] items-center mx-auto">
+         <ul className='hover:underline xl:w-30 sm:w-28'>
             <h1 className='text-xl'>3rdGB Music</h1>
             <li className='font-thin text-[12px]'><a href="">Stream millions of Songs</a></li>
          </ul>
@@ -193,7 +193,7 @@ const Footer = () => {
             <h1 className='text-xl'>Sell on 3rdGB</h1>
             <li className='font-thin text-[12px]'><a href="">Opening a Selling Account</a></li>
          </ul>
-         <ul className='hover:underline w-30' >
+         <ul className='hover:underline xl:w-30 sm:w-28' >
             <h1 className='text-xl'>3rdGB Global</h1>
             <li className='font-thin text-[12px]'><a href=""></a>Ship goods internationally</li>
          </ul>
@@ -225,7 +225,7 @@ const Footer = () => {
             <h1 className='text-xl'>Savings</h1>
             <li className='font-thin text-[12px]'><a href="">Discount Guide</a></li>
          </ul>
-         <ul className='hover:underline w-30' >
+         <ul className='hover:underline xl:w-30 sm:w-28' >
             <h1 className='text-xl'>3rdGB Subscriptions</h1>
             <li className='font-thin text-[12px]'><a href="">Get Premium Service</a></li>
          </ul>
