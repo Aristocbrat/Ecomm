@@ -6,7 +6,7 @@ const Socialicons = () => {
       
  <div className="mt-5 ">
    
-<ul class="example-2 flex justify-center items-center xl:gap-20 sm:gap-20 sm:ml-[-8%]  xl:px-5 ">
+<ul class="example-2 flex justify-center items-center xl:gap-20 sm:gap-20 sm:ml-[-10%]  xl:px-5 ">
   
   <li class="icon-content">
     <a data-social="github" aria-label="GitHub" href="#">
