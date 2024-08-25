@@ -26,7 +26,7 @@ const Avatar = () => {
     </div>
 
   </div>
-  <span className='font-extrabold text-white xl:w-[370px] sm:w-[250px] sm:text-[11px] xl:text-lg flex xl:left-10 sm:left-6  relative '>Visitors monthly , You can join Our Online community on Social-media</span>
+  <span className='font-extrabold text-white xl:w-[470px] sm:w-[250px]  sm:text-[11px] xl:text-lg flex xl:left-10 sm:left-6  relative '>Visitors monthly , You can join Our Online community on Social-media</span>
 </div>
 
     </div>

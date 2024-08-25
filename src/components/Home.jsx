@@ -11,7 +11,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Socialicons from './Socialicons';
 import Deals from './itemcardss/Deals';
-import img1 from './../assets/images/back.jpg'
+import img1 from './../assets/images/Homebg3.jpg'
 import { IoMdPricetag } from "react-icons/io";
 import Loading1 from './loaders/Loading1';
 import Dropd from './loaders/Dropd';
@@ -32,17 +32,18 @@ const Home = () => {
          {/* <Navbar /> */}
          <Nav/>
          <Nav2/>
-         <div className="backg rounded-b-3xl" style={{
+         <div className="backg rounded-b-3xl sm:h-[300px]" style={{
           backgroundImage:`url(${img1})`, 
           backgroundPosition:'center',
           width:"100%",
           backgroundSize:"cover",
           height:'390px',
           opacity:"",
+          color:"#1f4550"
           
          }}>
           
-         <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-3xl font-extrabold py-4 text-gray-600 flex xl:ml-6'>Welcome to <IoMdPricetag />3rdGB</h1>
+         <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-3xl font-extrabold py-4 text-white flex xl:ml-6 px-4'><GiLindenLeaf />Welcome to <IoMdPricetag />3rdGB</h1>
          <h1 data-aos="slide-down" data-aos-duration="2000"  className='xl:text-3xl sm:text-xl font-extrabold py-4 text-white  flex justify-center px-4 gap-4'>
           Have an Account already? if not <Dropd/> </h1>
          <Avatar />
