@@ -11,7 +11,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Socialicons from './Socialicons';
 import Deals from './itemcardss/Deals';
-import img1 from './../assets/images/Homebg3.jpg'
+import img1 from './../assets/images/homebg3.jpg'
 import { IoMdPricetag } from "react-icons/io";
 import Loading1 from './loaders/Loading1';
 import Dropd from './loaders/Dropd';
