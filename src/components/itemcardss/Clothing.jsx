@@ -12,7 +12,7 @@ const ClothingBs = (Bs) => {
   const {removeItem} = useCart();
   return (
     <div className=''>
-         <div className="card w-[350px] bg-gray-300 cl font-bold   ">
+         <div className="card xl:w-[350px] sm:w-full bg-gray-300 cl font-bold   ">
         <figure>
     <img
       src={Bs.img}

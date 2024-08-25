@@ -16,13 +16,13 @@ import { MdSell } from "react-icons/md";
 const Nav2 = () => {
     const {totalItems , totalWish} = useCart();
   return (
-    <div className='overflow-hidden'>
+    <div className=''>
       <div className="nav2 bg-[#1f4550] dark:bg-black dark:text-white flex flex-wrap justify-between
  text-white font-bold border-white border-t-2 w-full">
         <div className="all flex gap-1 px-4">
         <div className="dropdown dropdown-hover">
            <div tabIndex={0} role="button" className="py-2"><CiMenuKebab className='text-3xl font-bold text-white' /></div>
-          <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[40] w-50 p-2 border-white border-2 shadow">
+          <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[50] w-50 p-2 border-white border-2 shadow">
           <li><a href='/'><MdOutlinePayment /> Payment</a></li>
           <hr  className='p-1 border-white'/>
           <li><a href='/Shop'><FaBagShopping /> Shop</a></li>

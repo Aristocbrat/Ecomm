@@ -16,7 +16,7 @@ const Clotandass = (clt) => {
         <section className=' py-4 px-4 flex flex-wrap gap-6'>
 
      
-<div className="card bg-[#1b3b44] w-96 h-[450px] text-white  shadow-xl">
+<div className="card bg-[#1b3b44] xl:w-96 sm:w-full h-[450px] text-white  shadow-xl">
     <figure className="px-10 pt-10">
        <img
        src={clt.img}

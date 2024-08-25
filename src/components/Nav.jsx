@@ -66,7 +66,7 @@ const Nav = () => {
     }
 
   return (
-    <div className='overflow-hidden'>
+    <div className=''>
       <div className="navbar bg-[#1f4550] dark:bg-black  text-white">
   <div className="navbar-start">
     <div className="dropdown">
@@ -75,7 +75,7 @@ const Nav = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-[#1f4550] rounded-box z-[1] mt-3 xl:w-56 dark:bg-black sm:w-44 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-[#1f4550] rounded-box z-[50] mt-3 xl:w-56 dark:bg-black sm:w-44 p-2 shadow">
         <li><a href='#'>Sign in</a></li>
         <li>
           <a></a>
