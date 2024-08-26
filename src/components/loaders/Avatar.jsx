@@ -22,11 +22,11 @@ const Avatar = () => {
   </div>
   <div className="avatar placeholder flex gap-3">
     <div className="bg-neutral text-neutral-content w-12">
-      <span>+15k</span>
+      <span className='xl:text-lg sm:text-[9px]'>+15k</span>
     </div>
 
   </div>
-  <span className='font-extrabold text-white xl:w-[470px] sm:w-[250px]  sm:text-[11px] xl:text-lg flex xl:left-10 sm:left-6  relative '>Visitors monthly , You can join Our Online community on Social-media</span>
+  <span className='font-extrabold text-white xl:w-[470px] sm:w-[250px]  sm:text-[11px] xl:text-lg flex xl:left-10 sm:left-6  relative z-0 '>Visitors monthly , You can join Our Online community on Social-media</span>
 </div>
 
     </div>

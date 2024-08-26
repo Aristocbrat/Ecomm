@@ -123,7 +123,7 @@ const Footer = () => {
             <div className="backtotop w-full bg-[#13282eb9] border-l-0 border-r-0 border-white border-b-2">
                  <a href="#top" className='flex justify-center py-3 hover:underline hover:scale-90 duration-300 '>Back to top</a>
             </div>
-             <div className="footext flex justify-center py-7 xl:gap-16 sm:gap-6 border-b-2 border-white flex-wrap ">
+             <div className="footext xl:flex justify-center py-7 xl:gap-16 sm:gap-6 border-b-2  sm:hidden border-white flex-wrap ">
                 <ul className='w-[16%]'>
                     <h1>Get to Know Us</h1>
                     <li className='text-[13px] py-1'><a href="">Careers</a></li>

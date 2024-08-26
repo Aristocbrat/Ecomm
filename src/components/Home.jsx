@@ -44,12 +44,13 @@ const Home = () => {
          }}>
           
          <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-3xl font-extrabold py-4 text-white flex xl:ml-6 px-3'><GiLindenLeaf />Welcome to <IoMdPricetag />3rdGB</h1>
-         <h1 data-aos="slide-down" data-aos-duration="2000"  className='xl:text-3xl sm:text-xl font-extrabold py-4 text-black  flex xl:flex-row sm:flex-col justify-center px-4 gap-4'>
+         <h1 data-aos="slide-down" data-aos-duration="2000"  className='xl:text-3xl sm:text-xl font-extrabold py-4 text-[#1e3136]
+           flex xl:flex-row sm:flex-col justify-center px-4 gap-4'>
           Have an Account already? if not <span><Dropd/></span> </h1>
          <Avatar />
          </div>
         <div className=" w-[100%]">
-          <div className="new sticky bg-white top-0 w-full z-20 dark:bg-black dark:text-white ">
+          <div className="new sticky bg-white top-0 w-full z-30 dark:bg-black dark:text-white ">
           <h1 className='text-4xl flex justify-center font-bold py-3'>New Arrivals <GiLindenLeaf /></h1>
           </div>
         
