@@ -15,7 +15,7 @@ const Elect = (El) => {
         <section className=' py-4 xl:px-4 flex flex-wrap xl:gap-6'>
 
      
-<div className="card bg-[#FFF8F3] xl:w-96 xl:h-[450px] sm:h-[200px] sm:w-[150px]  shadow-xl">
+<div className="card bg-[#b19e90] xl:w-96 xl:h-[450px] sm:h-[200px] sm:w-[150px]  shadow-xl">
     <figure className="px-10 xl:pt-10">
        <img
        src={El.img}

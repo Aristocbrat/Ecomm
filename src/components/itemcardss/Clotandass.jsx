@@ -25,7 +25,7 @@ className="rounded-xl w-96 object-cover hover:scale-125 duration-500 " />
 </figure>
 <div className="card-body items-center text-center">
 <h2 className="card-title xl:text-lg sm:text-[9px]">{clt.title}</h2>
-<h2 className="card-price flex xl:text-lg sm:text-[7px]"><FaNairaSign className='xl:mt-[6px] sm:mt-[2px] ml-1 xl:text-[13px] sm:text-[7px]'/>
+<h2 className="card-price flex xl:text-lg sm:text-[7px]"><FaNairaSign className='xl:mt-[6px] sm:mt-[2px] ml-1 xl:text-[15px] sm:text-[7px]'/>
 {clt.price}.00</h2>
 <p className='card-desc xl:text-lg sm:text-[7px]'>{clt.desc}</p>
 <div className="badge badge-outline font-bold xl:block sm:hidden"> Clothing & Accessories</div>

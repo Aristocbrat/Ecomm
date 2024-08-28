@@ -20,7 +20,7 @@ const productdata = [
         id: 1,
         img: ass,
         title: "RayBan Classic",
-        price: "150,000"
+        price: 150000
     },
     {
         id: 2,

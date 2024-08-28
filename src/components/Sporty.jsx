@@ -32,7 +32,7 @@ const Sporty = () => {
          <FaPersonRunning />
         </h1>
       </div>
-      <div className="flex justify-center flex-wrap gap-12 mt-4 bg-[#1f4550] font-bold">
+      <div className="flex justify-center flex-wrap gap-12 mt-4  font-bold">
         {currentPosts.map((item, index) => (
           <Sportsout
             key={index}

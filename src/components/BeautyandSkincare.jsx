@@ -34,7 +34,7 @@ const BeautyandSkincare = () => {
           <GiLips className='text-red-600 mt-1' />
         </h1>
       </div>
-      <div className="flex justify-center flex-wrap gap-12 mt-4 bg-[#FFDFD6]  dark:bg-black dark:text-white font-bold">
+      <div className="flex justify-center flex-wrap gap-12 mt-4  dark:bg-black dark:text-white font-bold">
         {currentPosts.map((item, index) => (
           <Btsk
             key={index}

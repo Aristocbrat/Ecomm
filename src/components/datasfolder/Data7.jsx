@@ -34,182 +34,182 @@ const productdata7 = [
         id: 1,
         img: img1,
         title: "Pink Baseball Hat",
-        price:"20,000.00",
+        price:20000,
         desc:"Quality Pink Leather hat"
     },
     {
         id: 2,
         img: img2,
         title: "Baseball hat ",
-        price:"18,000.00",
+        price:18000,
         desc:"Quality Baseball hat"
     },
     {
         id: 3,
         img: img3,
         title: "Cotton Packing Shirt (Male)",
-        price:"25,000.00",
+        price:25000,
         desc:"Quality Packing Shirt"
     },
     {
         id: 4,
         img: img4,
         title: "TFA's Office Shirt (Male)",
-        price:"25,000.00",
+        price:25000,
         desc:"Premium soft packing shirt"
     },
     {
         id: 5,
         img: img5,
         title: "Knitted Headwarmers ",
-        price:"10,500.00",
+        price:10500,
         desc:"Keep your heads warm "
     },
     {
         id: 6,
         img: img6,
         title: "Silk dxt Summer Dress (white)",
-        price:"32,000.00",
+        price:32000,
         desc:"Slay for the summer with silk"
     },
     {
         id: 7,
         img: img7,
         title: "Simms Bra",
-        price:"12,000.00",
+        price:12000,
         desc:"Shine in Simms"
     },
     {
         id: 8,
         img: img8,
         title: "Pt Office Shirt (Male)",
-        price:"20,000.00",
+        price:20000,
         desc:"Perfect Office shirts"
     },
     {
         id: 9,
         img: img9,
         title: "Leather Brouges ",
-        price:"180,000.00",
+        price:180000,
         desc:"Quality Brown Brogues"
     },
     {
         id: 10,
         img: img10,
         title: "Tanko's feet (Female)",
-        price:"14,000.00",
+        price:14000,
         desc:"Easy and Very Comfortable"
     },
     {
         id: 11,
         img: img11,
         title: "Le Anerance Sweatshirt",
-        price:"10,000.00",
+        price:10000,
         desc:"Super Comfy"
     },
     {
         id: 12,
         img: img12,
         title: "Champion Hoodies",
-        price:"50,000.00",
+        price:50000,
         desc:"Nice and Comfortable"
     },
     {
         id: 13,
         img: img13,
         title: "Brogues",
-        price:"200,000.00",
+        price:200000,
         desc:"Extraordinary Quality"
     },
     {
         id: 14,
         img: img14,
         title: "Nike Benassi Slide",
-        price:"32,000.00",
+        price:32000,
         desc:"Quality and Comfy slide"
     },
     {
         id: 15,
         img: img15,
         title: "Birken Stock Slide",
-        price:"35,000.00",
+        price:35000,
         desc:"Quality Slide"
     },
     {
         id: 16,
         img: img16,
         title: "Crocs",
-        price:"23,050.00",
+        price:23050,
         desc:"Comfortable & Durable"
     },
     {
         id: 17,
         img: img17,
         title: "Diamond Crusted Bracelet",
-        price:"1,020,000.00",
+        price:1020000,
         desc:"Luxury and Class "
     },
     {
         id: 18,
         img: img18,
         title: "Cotton Scarf",
-        price:"50,000.00",
+        price:50000,
         desc:"Super Comfy and Soft"
     },
     {
         id: 19,
         img: img19,
         title: "RayBan (Classic)",
-        price:"150,000.00",
+        price:150000,
         desc:"Classic and Retro "
     },
     {
         id: 20,
         img: img20,
         title: "RayBan (Dark)",
-        price:"250,000.00",
+        price:250000,
         desc:"Feel like a Boss"
     },
     {
         id: 21,
         img: img21,
         title: "Gold Bracelet",
-        price:"320,000.00",
+        price:320000,
         desc:"Glow with Gold"
     },
     {
         id: 22,
         img: img22,
         title: "SnapBag Hat (4FR)",
-        price:"30,000.00",
+        price:30000,
         desc:"Get your swg on with 4FR"
     },
     {
         id: 23,
         img: img23,
         title: "Cowboy Leather Boots",
-        price:"80,000.00",
+        price:80000,
         desc:"Strong & Reliable"
     },
     {
         id: 24,
         img: img24,
         title: "Denim Jean Jacket",
-        price:"100,000.00",
+        price:100000,
         desc:"Quality Denim"
     },
     {
         id: 25,
         img: img25,
         title: "Bikerrs Leather Jacket",
-        price:"150,000.00",
+        price:150000,
         desc:"Quality Leather Jacket"
     },
     {
         id: 26,
         img: img26,
         title: "Beach Wear (Female)",
-        price:"35,000.00",
+        price:35000,
         desc:"Enjoy the Beach"
     },
     
