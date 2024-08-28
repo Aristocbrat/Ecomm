@@ -34,7 +34,7 @@ const Cart = () => {
     );
     
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Nav/>
       <Nav2/>
        <div className="main">

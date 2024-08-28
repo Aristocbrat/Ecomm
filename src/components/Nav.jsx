@@ -37,9 +37,9 @@ const Nav = () => {
         };
   
         return (
-          <div className="relative inline-block sm:hidden xl:block w-28 ml-6 text-white">
+          <div className="relative inline-block sm:hidden xl:block w-32 ml-6 text-white">
             <div 
-              className="flex items-center gap-2 p-2 border border-gray-300 rounded cursor-pointer" 
+              className="flex items-center gap-2 p-2 border w-32 border-gray-300 rounded cursor-pointer" 
               onClick={toggleDropdown}
             >
               <span>{options.find(option => option.value === selectedCountry)?.label}</span>
@@ -96,7 +96,7 @@ const Nav = () => {
     </div>
     <a href='/' className="btn btn-ghost text-4xl font-extrabold"><i className="ri-price-tag-3-fill"></i>3rdGB</a>
     <Countries/>
-    <div className="search sm:hidden xl:block  ml-20 flex ">
+    <div className="search sm:hidden xl:block  ml-32 flex ">
          <input type="search" 
           placeholder='Search'
           className='xl:w-[200px]  h-11 bg-gray-400 placeholder:text-white text-center placeholder:opacity-75 font-bold form-control rounded-lg ' />
@@ -105,19 +105,20 @@ const Nav = () => {
          </div>
     
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex ml-20">
     <ul className="menu menu-horizontal px-1">
       <li></li>
       <li>
         <details>
           <summary><a href="#">Subscription</a></summary>
-          <ul className="p-2">
-            <li></li>
-            <li></li>
+          <ul className="p-2 w-24 absolute z-30 bg-[#1f4550] border-white border-2">
+            <li className='flex ml-3 py-1'>Premium </li>
+            <hr className='border-1 border-white '/>
+            <li className='flex ml-3 py-1'>Regular</li>
           </ul>
         </details>
       </li>
-      <li><a>Item 3</a></li>
+      <li><a></a></li>
     </ul>
    
   </div>
