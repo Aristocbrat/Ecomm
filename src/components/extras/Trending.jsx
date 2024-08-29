@@ -27,7 +27,7 @@ import img24 from './../../assets/images/phx.jpg'
 
 const Trending = () => {
   return (
-    <div className='py-6  dark:bg-[#1f4550]' id='Trending'>
+    <div className='py-6  dark:bg-[#1f4550] sm:overflow-hidden' id='Trending'>
         <h1 className='font-extrabold xl:text-5xl sm:text-3xl flex justify-center py-3'>Trending</h1>
       <div className="flex xl:w-[95%] sm:w-full  h-full trend xl:mx-auto sm:ml-3 gap-20 justify-center xl:flex-row sm:flex-col flex-wrap rounded-lg  ">
          <div className="fashTren bg-[#00ADB5] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg">
