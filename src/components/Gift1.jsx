@@ -52,8 +52,8 @@ const Gift1 = () => {
         <div className="bg-white xl:w-[700px] h-[190px] mx-auto rounded-2xl relative z-10 mt-[-3%] dark:text-black">
              <h1 className='py-4 mx-auto flex justify-center font-extrabold xl:text-5xl  sm:text-xl gap-3'> <MdCelebration /> Unwrap Joy </h1>
              <p className='ml-[8%] xl:text-xl text-[13px] font-semibold w-[86%] px-4'>For Weddings , Birthdays , Graduations or any Life-event we got you covered .</p>
-             <p className='ml-[32%] xl:text-xl text-[13px] font-semibold'>We ensure the perfect gifts</p>
-             <button className='btn bg-yellow-400 text-white ml-[38%] mt-2'>Create a gift list</button>
+             <p className='xl:ml-[32%] sm:ml-[28%] xl:text-xl text-[13px] font-semibold'>We ensure the perfect gifts</p>
+             <button className='btn bg-yellow-400 text-white xl:ml-[38%] sm:ml-[28%] mt-2'>Create a gift list</button>
         </div>    
       </section>
       <div className=" py-4 mt-3 text-white">
@@ -153,19 +153,19 @@ const Gift1 = () => {
 <div className="reasonsto px-5 mt-4 py-4">
     <h1 className='xl:text-4xl sm:text-xl font-bold px-3 text-blue-950 dark:text-white'>Reasons to with register 3rdGB</h1>
     <div className="reasoncard flex flex-wrap gap-9 py-5 ">
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 xl:w-96 sm:w-full shadow-xl">
         <div className="card-body dark:text-black">
             <h2 className="card-title flex gap-4 text-2xl flex-col"><FcGlobe className='text-4xl' /> Global Reach </h2>
             <p className='mx-auto w-[300px] text-[14px]'>Add items from 3rdGB to create a gift registry for any occasion.</p>
         </div>
       </div>
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100 xl:w-96 sm:w-full shadow-xl">
         <div className="card-body dark:text-black">
             <h2 className="card-title flex gap-4 text-2xl flex-col"><FaGifts className='text-4xl'/> Easy to Share</h2>
             <p className='mx-auto w-[320px] text-[14px]'>Share your gift registry to friends and family so they will know what to get.</p>
          </div>
         </div>
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100 xl:w-96 sm:w-full shadow-xl">
         <div className="card-body dark:text-black">
             <h2 className="card-title flex gap-4 text-2xl flex-col"><GiReturnArrow className='text-4xl'/> Extended Returns</h2>
             <p className='mx-auto w-[300px] text-[14px]'>Don't like the gift? Registry gifts have an extended return period</p>

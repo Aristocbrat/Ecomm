@@ -14,7 +14,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowTurnDown } from "react-icons/fa6";
 import img1 from "../assets/images/yw1.jpg"
 import img2 from "../assets/images/yw2.jpg"
-import img3 from "../assets/images/ww1.jpg"
+import img3 from "../assets/images/ww1.jpg" 
 import img4 from "../assets/images/mn2.jpg"
 import img5 from "../assets/images/login.jpg"
 import img6 from "../assets/images/gdsp.jpg"
@@ -66,13 +66,13 @@ const Discount = () => {
            </div>
           <div className="submain mt-8 py-7 ">
             <button className='flex bg-green-500 text-white font-bold p-2 rounded-[10px] mx-auto'><RiDiscountPercentFill className='text-xl text-white'/>New Sellers Incentive </button>
-            <div className="inc mt-2 flex xl:flex-row sm:flex-col gap-2 px-5 sm:ml-9">
-              <img src={img1} alt="" className='w-[300px] rounded-b-full object-cover' />
-              <img src={img2} alt="" className='w-[300px] rounded-t-full object-cover'/>
+            <div className="inc mt-2 flex xl:flex-row sm:flex-col gap-2 px-5 ">
+              <img src={img1} alt="" className='xl:w-[300px] rounded-b-full object-cover' />
+              <img src={img2} alt="" className='xl:w-[300px] rounded-t-full object-cover'/>
             <div className="inctext mt-10 xl:ml-4">
                <h1 className='xl:text-6xl font-bold pb-4'>Get started with #50,000 in Incentive</h1>
                <p className='xl:w-[590px] sm:w-[90%] font-bold'>Ready to sell with 3rdGB ? Well get ready to have your mind blown with Our Series of Incentives.</p>
-               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 ml-[-9%] rounded-lg mt-5 w-[89%]">
+               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 xl:ml-[-9%] rounded-lg mt-5 xl:w-[89%] sm:w-full">
                 <ul>
                   <li className='py-2 flex gap-2'><FaCheck /> <span className='font-bold'>10% back</span>on your first #50,000 on branded sales. </li>
                   <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>5% back </span> through your first year until you reach #1,000,000. </li>
@@ -189,9 +189,9 @@ const Discount = () => {
                 <figure>
                   <img
                     src={img3}
-                      alt="femaleclient" className='w-[150px] rounded-full' />
+                      alt="femaleclient" className='w-[150px] rounded-full mt-5' />
                          </figure>
-                       <div className="card-body">
+                       <div className="card-body xl:mt-0 sm:mt-7">
                         <div className="cardname"><h1 className='font-bold ml-[37%]'>Gilberto Vifi</h1></div>
                       <h2 className="card-title text-[13px] font-bold mx-auto ">Co-founder of ilikemyGoods.com </h2>
                         <p className='font-semibold'> "I was looking for a community i could trust and i am really happy i found it.All I needed to do was find them" </p>
@@ -206,7 +206,7 @@ const Discount = () => {
                       src={img4}
                        alt="maleclient" className='w-[150px] rounded-[99px]' />
                          </figure>
-                     <div className="card-body">
+                     <div className="card-body xl:mt-0 sm:mt-7">
                      <div className="cardname"><h1 className='font-bold ml-[35%]'>Femi Odegbami</h1></div>
                       <h2 className="card-title text-[13px] font-bold mx-auto">CEO Look9ice INC</h2>
                        <p>"Not many people know's the struggle of finding new ways of selling your product ,I am so lucky i found this and this is a game changer"</p>
@@ -219,16 +219,16 @@ const Discount = () => {
            <div className="bg-[#f1efef] flex w-[95%] xl:flex-row sm:flex-col justify-between mt-[4%] mx-auto px-6 py-5 font-extrabold text-4xl text-blue-950 dark:bg-[#1f4550] dark:text-white">
                <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-white">
                 <h1 className='justify-center flex'>#2,300,000+</h1>
-                < p className='xl:text-xl sm:text-[22px] font-semibold xl:w-[350px] sm:w-[100%]'>Average sales for Nigerian-based sellers monthly.</p>
+                < p className='xl:text-xl sm:text-[19px] font-semibold xl:w-[350px] sm:w-[100%]'>Average sales for Nigerian-based sellers monthly.</p>
                </div>
                <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-white">
                 <h1 className='justify-center flex'>+70%</h1>
-                < p className='xl:text-xl sm:text-[22px] font-semibold xl:w-[350px] sm:w-[100%]'>Percentage of sales at 3rdGB store from independent sellers.
+                < p className='xl:text-xl sm:text-[19px] font-semibold xl:w-[350px] sm:w-[100%]'>Percentage of sales at 3rdGB store from independent sellers.
                 Mostly small & medium-sized businesses.</p>
                </div>
                <div className="div1 px-4 py-4 ">
                 <h1 className='justify-center flex'>+10</h1>
-                < p className='xl:text-xl sm:text-[22px] font-semibold xl:w-[350px] sm:w-[100%] '>Countries and regions 3rdGB ships to customers.</p>
+                < p className='xl:text-xl sm:text-[19px] font-semibold xl:w-[350px] sm:w-[100%] '>Countries and regions 3rdGB ships to customers.</p>
                </div>
             </div>
           </div>
