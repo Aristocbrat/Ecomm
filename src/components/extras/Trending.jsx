@@ -59,7 +59,7 @@ const Trending = () => {
            <img src={img10} alt="" />
            <img src={img11} alt="" />
            <img src={img12} alt="" />
-           <div className="mx-auto text-white font-extrabold cursor-pointer hover:text-blue-950 duration-300">
+           <div className="mx-auto text-[#2d6164] font-extrabold cursor-pointer hover:text-blue-950 duration-300">
             <h1><a href="/Sporty">Sports & Outdoors</a></h1>
            </div>
 

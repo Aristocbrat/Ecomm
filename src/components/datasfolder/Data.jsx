@@ -79,7 +79,7 @@ const productdata = [
     {
         id: 11,
         img: neck2,
-        title: "Louvre Liss Necklace",
+        title: "Louvre Necklace",
         price: 1150000
     },
     {
