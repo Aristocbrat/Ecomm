@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
-import france from "./../assets/images/france.png"
-import germany from "./../assets/images/germany.png"
-import uk from "./../assets/images/united-kingdom.png"
-import spain from "./../assets/images/spain.png"
+import france from "./../../assets/images/france.png"
+import germany from "./../../assets/images/germany.png"
+import uk from "./../../assets/images/united-kingdom.png"
+import spain from "./../../assets/images/spain.png"
 
 import { CiMenuBurger } from "react-icons/ci"
 

@@ -1,13 +1,14 @@
 import React,{useEffect,useState} from 'react'
-import france from "./../assets/images/france.png"
-import germany from "./../assets/images/germany.png"
-import uk from "./../assets/images/united-kingdom.png"
-import spain from "./../assets/images/spain.png"
-import Nig from "./../assets/images/nigeria.png"
-import Gha from "./../assets/images/ghana.png"
-import rsa from "./../assets/images/south-africa.png"
-import bra from "./../assets/images/brazil-.png"
-import keny from "./../assets/images/kenya.png"
+import france from "./../../assets/images/france.png"
+import germany from "./../../assets/images/germany.png"
+import uk from "./../../assets/images/united-kingdom.png"
+import spain from "./../../assets/images/spain.png"
+import Nig from "./../../assets/images/nigeria.png"
+import Gha from "./../../assets/images/ghana.png"
+import rsa from "./../../assets/images/south-africa.png"
+import bra from "./../../assets/images/brazil-.png"
+import keny from "./../../assets/images/kenya.png"
+
 
 
 const Footer = () => {

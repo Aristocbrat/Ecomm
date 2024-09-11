@@ -1,6 +1,4 @@
 import React ,{useState}from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
 import { RiDiscountPercentFill } from "react-icons/ri";
 import { TiLocationArrow } from "react-icons/ti";
 import { MdOutlineComputer } from "react-icons/md";
@@ -12,19 +10,18 @@ import { FaCheck } from "react-icons/fa";
 import { GiLindenLeaf } from "react-icons/gi";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowTurnDown } from "react-icons/fa6";
-import img1 from "../assets/images/yw1.jpg"
-import img2 from "../assets/images/yw2.jpg"
-import img3 from "../assets/images/ww1.jpg" 
-import img4 from "../assets/images/mn2.jpg"
-import img5 from "../assets/images/login.jpg"
-import img6 from "../assets/images/gdsp.jpg"
-import img7 from "../assets/images/gdsp1.jpg"
-import img8 from "../assets/images/new.jpg"
-import img9 from "../assets/images/team2.jpg"
-import img10 from "../assets/images/team1.jpg"
-import img11 from "../assets/images/mn1.jpg"
-import Nav from './Nav';
-import Nav2 from './Nav2';
+import img1 from "./../../assets/images/yw1.jpg"
+import img2 from "./../../assets/images/yw2.jpg"
+import img3 from "./../../assets/images/ww1.jpg" 
+import img4 from "./../../assets/images/mn2.jpg"
+import img5 from "./../../assets/images/login.jpg"
+import img6 from "./../../assets/images/gdsp.jpg"
+import img7 from "./../../assets/images/gdsp1.jpg"
+import img8 from "./../../assets/images/new.jpg"
+import img9 from "./../../assets/images/team2.jpg"
+import img10 from "./../../assets/images/team1.jpg"
+import img11 from "./../../assets/images/mn1.jpg"
+
 
 const Discount = () => {
   const [message, setMessage] = useState('');
@@ -35,8 +32,6 @@ const Discount = () => {
 
   return (
     <div className='w-full overflow-hidden '>
-      <Nav/>
-      <Nav2/>
        <div className="regis sticky top-[0%] z-20 w-full bg-white  dark:bg-black dark:text-white flex justify-between xl:px-7 sm:px-2 py-4">
   <h1 className='xl:text-3xl sm:text-[12px] font-bold sm:mt-2'>Sell with 3rdGB</h1>
   <h1 className='flex py-2 font-semibold sm:text-[10px] xl:text-lg xl:w-[250px] sm:w-[120px]'>
@@ -283,7 +278,6 @@ const Discount = () => {
             </div>
              
           </div>
-       <Footer/>
     </div>
   )
 }

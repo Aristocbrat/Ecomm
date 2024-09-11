@@ -1,19 +1,22 @@
 
 import './App.css'
-import Bestsellers from './components/Bestsellers';
-import Cart from './components/Cart'
-import Home from './components/Home'
-import Discount from './components/Discount';
+import Bestsellers from './components/client/Bestsellers';
+import Cart from './components/client/Cart'
+import Home from './components/client/Home'
+import Discount from './components/client/Discount';
 import { Routes,Route } from 'react-router-dom'
 import { CartProvider } from 'react-use-cart';
-import Gift1 from './components/Gift1';
-import Electronics from './components/Electronics';
-import BeautyandSkincare from './components/BeautyandSkincare';
-import ClothingandAcesserories from './components/ClothingandAcesserories';
-import Sporty from './components/Sporty';
-import Furniture from './components/Furniture';
+import Gift1 from './components/client/Gift1';
+import Electronics from './components/client/Electronics';
+import BeautyandSkincare from './components/client/BeautyandSkincare';
+import ClothingandAcesserories from './components/client/ClothingandAcesserories';
+import Sporty from './components/client/Sporty';
+import Furniture from './components/client/Furniture';
 import Wishlist from './components/wishlist/Wishlist';
 import Shop from './components/subpage/Shop';
+import Nav from './components/constants/Nav';
+import Nav2 from './components/constants/Nav2';
+import Footer from './components/constants/Footer';
 
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
   return (
     <>
     <div className="dark:bg-black dark:text-white dark:duration-500 duration-500 ">
+    <Nav/>
+    <Nav2/>
     <CartProvider>
       <Routes>
      <Route path='/' element={<Home/>}/>
@@ -38,6 +43,7 @@ function App() {
      <Route path='/Shop' element={<Shop/>}/>
       </Routes>
       </CartProvider>
+      <Footer/>
       </div> 
     </>
   )

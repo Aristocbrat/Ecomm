@@ -22,7 +22,8 @@ const Nav2 = () => {
         <div className="all flex gap-1 px-4">
         <div className="dropdown dropdown-hover">
            <div tabIndex={0} role="button" className="py-2"><CiMenuKebab className='text-3xl font-bold text-white' /></div>
-          <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white rounded-box z-[50] w-50 p-2 border-white border-2 shadow">
+          <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white 
+          rounded-box z-[50] w-50 p-2 border-white border-2 shadow">
           <li><a href='/'><MdOutlinePayment /> Payment</a></li>
           <hr  className='p-1 border-white'/>
           <li><a href='/Shop'><FaBagShopping /> Shop</a></li>
@@ -51,7 +52,7 @@ const Nav2 = () => {
             <span className='sm:hidden xl:block'>Category</span>
             </div>
              <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white 
-             rounded-box z-[50] xl:w-20 sm:w-20 p-2  xl:text-[] sm:text-[12px]">
+             rounded-box z-[50] xl:w-20 sm:w-20 p-2  xl:text-lg sm:text-[9px]">
                 <li className='hover:underline duration-500 ml-[-10px] mt-3'><a href='/BeautyandSkincare'>Beauty & Skincare</a></li>
                 <hr className="p-1 border-white sm:w-16" />
                  <li className='hover:underline duration-500 ml-[-14px]'><a href='/ClothingandAcesserories'>Clothing & Accessories</a></li>
@@ -68,7 +69,8 @@ const Nav2 = () => {
             <span  className='sm:hidden xl:block'>BestSellers</span> </a>
             <a href="/Gift1"><div className=" tooltip tooltip-top flex" data-tip="Gift">
             <CiGift className='text-xl mt-1'/><span className='sm:hidden xl:block mt-1'>Gift</span> </div></a>
-            <a href="/Discount" className='hover:underline hover:scale-105 py-1 flex  tooltip tooltip-top' data-tip="Sell"><MdSell className='text-xl ' />
+            <a href="/Discount" className='hover:underline hover:scale-105 py-1 flex  tooltip tooltip-top' data-tip="Sell">
+            <MdSell className='text-xl ' />
             <span className='sm:hidden xl:block'>Sell</span> </a>
           
             

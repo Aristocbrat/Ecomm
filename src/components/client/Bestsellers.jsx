@@ -1,21 +1,18 @@
 import React from 'react'
 import { GiLindenLeaf } from "react-icons/gi";
-import Navbar from './Navbar'
-import Footer from './Footer'
-import productdata2 from './datasfolder/Data2';
-import productdata3 from './datasfolder/Data3';
-import ClothingBs from './itemcardss/Clothing';
-import productdata4 from './datasfolder/Data4';
-import Furn from './itemcardss/Furn';
-import Sportbs from './itemcardss/Sportbs';
-import Nav from './Nav';
-import Nav2 from './Nav2';
+
+import productdata2 from './../datasfolder/Data2';
+import productdata3 from './../datasfolder/Data3';
+import ClothingBs from './../itemcardss/Clothing';
+import productdata4 from '../datasfolder/Data4';
+import Furn from './../itemcardss/Furn';
+import Sportbs from './../itemcardss/Sportbs';
+
 
 const Bestsellers = () => {
   return (
     <div>
-    <Nav/>
-    <Nav2/>
+    
      <div className="hes bg-[#162b30]  dark:bg-black dark:text-white">
         <div className="hestext text-white flex justify-between px-5">
             <h1 className='xl:text-4xl font-bold py-3' ><i className="ri-price-tag-3-fill"></i>Shop here for the right price</h1>
@@ -86,7 +83,7 @@ const Bestsellers = () => {
      </div>
      
      
-<Footer/>
+
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
-import Footer from '../Footer'
-import Navbar from '../Navbar'
+
 import { SiWish } from "react-icons/si";
 import { IoMdAdd } from "react-icons/io";
 import { RiSubtractFill } from "react-icons/ri";
@@ -23,7 +22,7 @@ const Wishlist = () => {
     if (isWishEmpty) return (
         
         <div className="">
-        <Navbar/>
+       
         <h1 className='font-bold text-3xl flex justify-center'>
           <PiMaskSadBold  className='text-4xl'/> Your Wishlist is empty
         </h1>
@@ -69,7 +68,7 @@ const Wishlist = () => {
        </div>
     
         
-        <Footer/>
+      
       
     </div>
   )

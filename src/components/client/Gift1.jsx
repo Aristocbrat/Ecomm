@@ -1,36 +1,32 @@
 import React from 'react'
-
-import Footer from './Footer'
-
 import { MdCelebration } from "react-icons/md";
 import { FcGlobe } from "react-icons/fc";
 import { FaGifts } from "react-icons/fa";
-import img1 from "../assets/images/gitftbg.jpg"
+import img1 from "./../../assets/images/gitftbg.jpg"
 import { GiReturnArrow } from "react-icons/gi";
-import img2 from "../assets/images/bd1.jpg"
-import img3 from "../assets/images/wd1.jpg"
-import img4 from "../assets/images/gd1.jpg"
-import img5 from "../assets/images/ch1.jpg"
-import img6 from "../assets/images/beach1.jpg"
-import img7 from "../assets/images/ppods.jpg"
-import img8 from "../assets/images/dves.jpg"
-import img9 from "../assets/images/dlv.jpg"
-import img10 from "../assets/images/book4.jpg"
-import Nav from './Nav';
-import Nav2 from './Nav2';
+import img2 from "./../../assets/images/bd1.jpg"
+import img3 from "./../../assets/images/wd1.jpg"
+import img4 from "./../../assets/images/gd1.jpg"
+import img5 from "./../../assets/images/ch1.jpg"
+import img6 from "./../../assets/images/beach1.jpg"
+import img7 from "./../../assets/images/ppods.jpg"
+import img8 from "./../../assets/images/dves.jpg"
+import img10 from "./../../assets/images/book4.jpg"
+
+
 
 
 const Gift1 = () => {
   return (
     <div>
-      <Nav/>
-      <Nav2/>
+      
       <section className='sticky  top-0  z-30 '>
         <div className="seminav flex xl:gap-20 sm:gap-4 bg-white  dark:bg-black dark:text-white  xl:px-7 sm:px-4 py-4 w-full">
             <a href="#" className='font-bold hover:underline text-blue-950 dark:text-white xl:text-xl'>Find & Create (Gifting)</a>
             <div className="dropdown dropdown-hover">
               <div tabIndex={0} role="button" className=" flex  font-semibold">Find a Gift-List</div>
-                <ul tabIndex={0} className="dropdown-content menu bg-[#F7F9F2] rounded-box z-[1] xl:w-32 sm:w-20 text-blue-950  font-semibold p-2 shadow">
+                <ul tabIndex={0} className="dropdown-content menu bg-[#F7F9F2] rounded-box z-[1] xl:w-32 sm:w-24
+                 text-blue-950  font-semibold p-2 shadow">
                    <li className='sm:ml-[-10px] xl:ml-0'><a>Children Gifts</a></li>
                     <li className='sm:ml-[-10px] xl:ml-0'><a>Wedding Gifts</a></li>
                     <li className='sm:ml-[-18px] xl:ml-0'><a>Graduation</a></li>
@@ -224,7 +220,7 @@ const Gift1 = () => {
                   </div>
                 </div>
              </div>
-          <Footer/>
+          
          </div>
   )
 }

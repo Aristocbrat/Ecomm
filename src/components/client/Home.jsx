@@ -2,25 +2,21 @@ import React , {useEffect,useState}from 'react'
 import { GiLindenLeaf } from "react-icons/gi";
 import { IoCalendarNumberSharp } from "react-icons/io5";
 import { GiCampfire } from "react-icons/gi";
-import { FaRegSmileWink } from "react-icons/fa";
 import { RiDiscountPercentFill } from "react-icons/ri";
-import Itemcard from './itemcardss/Itemcard'
-import productdata from './datasfolder/Data'
-import productdata5 from './datasfolder/Data5';
-import { HiChevronDoubleDown } from "react-icons/hi";
-import Footer from "./Footer"
-import Socialicons from './Socialicons';
-import Deals from './itemcardss/Deals';
-import img1 from './../assets/images/homebg.jpg'
+import Itemcard from './../itemcardss/Itemcard'
+import productdata from './../datasfolder/Data'
+import productdata5 from './../datasfolder/Data5';
+import Deals from './../itemcardss/Deals';
+import img1 from './../../assets/images/homebg.jpg'
 import { IoMdPricetag } from "react-icons/io";
-import Loading1 from './loaders/Loading1';
-import Dropd from './loaders/Dropd';
-import Avatar from './loaders/Avatar';
-import Nav from './Nav';
-import Nav2 from './Nav2';
-import Bottom from './extras/Bottom';
-import Summary from './extras/Summary';
-import Trending from './extras/Trending';
+import Loading1 from './../loaders/Loading1';
+import Dropd from './../loaders/Dropd';
+import Avatar from './../loaders/Avatar';
+import Bottom from './../extras/Bottom';
+import Summary from './../extras/Summary';
+import Trending from './../extras/Trending';
+import Socialicons from './../client/Socialicons';
+
 
 
 
@@ -31,9 +27,7 @@ const Home = () => {
   return (
     <div id='top' >
         <div className="div overflow-hidden ">
-         {/* <Navbar /> */}
-         <Nav/>
-         <Nav2/>
+        
          <div className="backg rounded-b-3xl sm:h-[300px]" style={{
           backgroundImage:`url(${img1})`, 
           backgroundPosition:'center',
@@ -45,16 +39,22 @@ const Home = () => {
           
          }}>
           
-         <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-3xl font-extrabold py-4 text-[#1e3136] flex xl:ml-6 px-3'><GiLindenLeaf />Welcome to <IoMdPricetag />3rdGB</h1>
-         <h1 data-aos="slide-down" data-aos-duration="2000"  className='xl:text-3xl sm:text-xl font-extrabold py-4 text-[#1e3136]
+         <h1 data-aos="slide-right" data-aos-duration="2000" className='xl:text-7xl sm:text-2xl font-extrabold py-4 text-[#1e3136]
+          flex xl:ml-6 px-3 wel'><GiLindenLeaf />Welcome to
+          <IoMdPricetag className='sm:mt-[8px] xl:mt-0'/>3rdGB</h1>
+         <h1 data-aos="slide-down" data-aos-duration="2000"  className='xl:text-3xl sm:text-lg font-extrabold py-4 text-[#1e3136]
            flex xl:flex-row sm:flex-col justify-center px-4 gap-4'>
           Have an Account already? if not <span><Dropd/></span> </h1>
          <Avatar />
          <div className="lnkss flex justify-center text-white xl:gap-16 sm:gap-10 mt-5 font-extrabold  ">
-          <a href="#Trending" className='underline hover:scale-150 duration-500 sm:text-[9px] xl:text-lg'>Trending</a>
-          <a href="#Review" className='underline hover:scale-150 duration-500 sm:text-[9px] xl:text-lg' >Reviews</a>
-          <a href="#" className='underline hover:scale-150 duration-500 sm:text-[9px] xl:text-lg'> Call Center</a>
-          <a href="#" className='underline hover:scale-150 duration-500 sm:text-[9px] xl:text-lg'> Customer Care</a>
+          <a href="#Trending" className='underline xl:hover:scale-150 sm:hover:scale-95 duration-500 sm:text-[9px] xl:text-lg'>Trending</a>
+          <a href="#Review" className='underline xl:hover:scale-150 sm:hover:scale-95 duration-500 sm:text-[9px] xl:text-lg' >Reviews</a>
+          <a href="#" className='underline xl:hover:scale-150 sm:hover:scale-95 duration-500 sm:text-[9px] xl:text-lg'> Call Center</a>
+          <a href="#" className='underline xl:hover:scale-150 sm:hover:scale-95 duration-500 sm:text-[9px] xl:text-lg'> Customer Care</a>
+         </div>
+         <div className="flex justify-center py-3 gap-6">
+          <img src="/public/App Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
+          <img src="/public/Play Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
          </div>
          {/* <HiChevronDoubleDown /> */}
          </div>
@@ -108,7 +108,7 @@ const Home = () => {
         <Trending/>
         <Summary/>
         <Bottom/>
-        <Footer/>
+        
     </div>
   )
 }

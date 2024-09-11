@@ -4,11 +4,8 @@ import { PiMaskSadBold } from "react-icons/pi";
 import { IoMdAdd } from "react-icons/io";
 import { RiSubtractFill } from "react-icons/ri";
 import { MdCancel } from "react-icons/md";
-import Navbar from './Navbar'
 import { FaNairaSign } from "react-icons/fa6";
-import Footer from './Footer'
-import Nav from './Nav';
-import Nav2 from './Nav2';
+
 const Cart = () => {
  const [emptyWishlist,] = useState(0);
     const {
@@ -24,19 +21,17 @@ const Cart = () => {
     } = useCart()
     if(isEmpty) return (
       <div>
-        <Nav/>
-        <Nav2/>
+        
         <h1 className='font-bold text-3xl flex justify-center'>
           <PiMaskSadBold  className='text-4xl'/> Your Cart is empty
         </h1>
-        <Footer/>
+        
       </div>
     );
     
   return (
     <div className='overflow-hidden'>
-      <Nav/>
-      <Nav2/>
+     
        <div className="main">
          <section className='container px-5'>
           <h3 className='font-bold xl:text-3xl sm:text-xl py-4 mx-auto'>Cart({totalUniqueItems}) Total Items : ({totalItems})</h3>
@@ -70,7 +65,7 @@ const Cart = () => {
            <button className='btn bg-slate-600 text-white'>PayNow</button>
          </div>
        </div>
-      <Footer/>
+      
     </div>
   )
 }

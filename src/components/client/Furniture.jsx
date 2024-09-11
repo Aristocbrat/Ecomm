@@ -1,13 +1,10 @@
 import React,{useEffect,useState} from 'react'
-import Pagination from './paginations/Pagination';
-import productdata10 from './datasfolder/Data10';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Pagination from './../paginations/Pagination';
+import productdata10 from './../datasfolder/Data10';
 import { MdChair } from "react-icons/md";
 import { MdTableBar } from "react-icons/md";
-import Furnint from './itemcardss/Furnint';
-import Nav from './Nav';
-import Nav2 from './Nav2';
+import Furnint from './../itemcardss/Furnint';
+
 
 const Furniture = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -23,8 +20,7 @@ const Furniture = () => {
       const paginate = (pageNumber) => setCurrentPage(pageNumber); 
   return (
     <div className='overflow-hidden'>
-      <Nav/>
-      <Nav2/>
+    
        <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">
         <h1 className='font-extrabold xl:text-4xl sm:text-xl flex justify-center py-5 gap-3 '>
         <MdChair />
@@ -45,7 +41,7 @@ const Furniture = () => {
         ))}
       </div>
       <Pagination postPerPage={postsPerPage} totalPosts={productdata10.length} paginate={paginate} />
-        <Footer/>
+    
       
     </div>
   )

@@ -320,12 +320,25 @@ ul {
    }
 
    .fashTren,.deviceTren,.beautyTren,.sportsTren{
-      width: 80% !important;
+      width: 90% !important;
       gap: 4px;
       padding: 12px 12px !important;
       margin: auto;
    }
 
+   .wel{
+    font-size: 25px !important;
+   }
+   .signup{
+      margin-top: -9% !important;
+   }
+
+}
+
+@media (max-width:375px) {
+  .fashTren,.beautyTren,.sportsTren,.deviceTren{
+    padding: 0px 35px !important;
+ } 
 }
 
 

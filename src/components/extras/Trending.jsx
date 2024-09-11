@@ -29,8 +29,10 @@ const Trending = () => {
   return (
     <div className='py-6  dark:bg-[#1f4550] sm:overflow-hidden' id='Trending'>
         <h1 className='font-extrabold xl:text-5xl sm:text-3xl flex justify-center py-3'>Trending</h1>
-      <div className="flex xl:w-[95%] sm:w-full  h-full trend xl:mx-auto sm:ml-3 gap-20 justify-center xl:flex-row sm:flex-col flex-wrap rounded-lg  ">
-         <div className="fashTren bg-[#00ADB5] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg">
+      <div className="flex xl:w-[95%] sm:w-full  h-full trend xl:mx-auto sm:ml-3 gap-20 justify-center
+       xl:flex-row sm:flex-col flex-wrap rounded-lg  ">
+         <div className="fashTren bg-[#00ADB5] xl:w-[24%] sm:w-[87%] sm:ml-3
+          xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[9px] xl:px-6 sm:px-11 py-3 rounded-lg">
            <img src={img1} alt="" />
            <img src={img2} alt="" />
            <img src={img3} alt="" />
@@ -40,7 +42,8 @@ const Trending = () => {
            </div>
 
          </div>
-         <div className="beautyTren bg-[#2d6164] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg">
+         <div className="beautyTren bg-[#2d6164] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2
+          sm:gap-[9px] xl:px-6 sm:px-11 py-3 rounded-lg">
          <img src={img5} alt="" />
            <img src={img6} alt="" />
            <img src={img7} alt="" />
@@ -50,7 +53,8 @@ const Trending = () => {
            </div>
 
          </div>
-         <div className="sportsTren bg-[#D1E9F6] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg ">
+         <div className="sportsTren bg-[#D1E9F6] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2
+          sm:gap-[9px] xl:px-6 sm:px-11 py-3 rounded-lg ">
            <img src={img9} alt="" />
            <img src={img10} alt="" />
            <img src={img11} alt="" />
@@ -60,7 +64,8 @@ const Trending = () => {
            </div>
 
          </div>
-         <div className="deviceTren bg-[#6482AD] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg">
+         <div className="deviceTren bg-[#6482AD] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap
+          xl:gap-2 sm:gap-[9px] xl:px-6 sm:px-11 py-3 rounded-lg">
          <img src={img13} alt="" />
            <img src={img14} alt="" />
            <img src={img15} alt="" />
@@ -69,7 +74,8 @@ const Trending = () => {
             <h1><a href="/Furniture">Furnitures & Interior</a></h1>
            </div>
          </div>
-         <div className="deviceTren bg-[#5e3f72] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14  py-3 rounded-lg">
+         <div className="deviceTren bg-[#5e3f72] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0
+          flex flex-wrap xl:gap-2 sm:gap-[9px] xl:px-6 sm:px-11  py-3 rounded-lg">
            <img src={img17} alt="" />
            <img src={img18} alt="" />
            <img src={img19} alt="" />
@@ -78,7 +84,8 @@ const Trending = () => {
             <h1>Cars & Automobile</h1>
            </div>
          </div>
-         <div className="deviceTren bg-[#ad9964af] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex flex-wrap xl:gap-2 sm:gap-[11px] xl:px-6 sm:px-14 py-3 rounded-lg">
+         <div className="deviceTren bg-[#ad9964af] xl:w-[24%] sm:w-[87%] sm:ml-3 xl:ml-0 flex 
+         flex-wrap xl:gap-2 sm:gap-[9px] xl:px-6 sm:px-11 py-3 rounded-lg">
            <img src={img21} alt="" />
            <img src={img22} alt="" />
            <img src={img23} alt="" />
