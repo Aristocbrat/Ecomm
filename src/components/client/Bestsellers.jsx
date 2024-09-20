@@ -17,7 +17,7 @@ const Bestsellers = () => {
         <div className="hestext text-white flex justify-between px-5">
             <h1 className='xl:text-4xl font-bold py-3' ><i className="ri-price-tag-3-fill"></i>Shop here for the right price</h1>
             <div className="subtextt">
-               <p className='text-center font-bold  xl:mt-6 sm:mt-3 sm:text-[11px] flex pe-5 gap-2'>This Month's Bestsellers <GiLindenLeaf className='text-3xl' /> </p>
+               <p className='text-center font-bold  xl:mt-6 sm:mt-3 xl:text-lg sm:text-[11px] flex pe-5 gap-2'>This Month's Bestsellers <GiLindenLeaf className='text-3xl' /> </p>
             </div>
         </div>
      </div>

@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { useCart } from 'react-use-cart'
+import { useCart } from 'react-use-cart';
 import { BiCategory } from "react-icons/bi";
 import { CiMenuKebab } from "react-icons/ci";
 import { MdOutlinePayment } from "react-icons/md";
@@ -14,7 +14,11 @@ import { MdSell } from "react-icons/md";
 
 
 const Nav2 = () => {
-    const {totalItems , totalWish} = useCart();
+    const {totalItems} = useCart();
+    console.log(totalItems);
+    useEffect(() => {
+      console.log("Total items updated:", totalItems);
+    }, [totalItems]); 
   return (
     <div className=''>
       <div className="nav2 bg-[#1f4550] dark:bg-black dark:text-white flex flex-wrap justify-between
@@ -42,7 +46,8 @@ const Nav2 = () => {
             <FaHome className='text-xl ' />
             <span className='sm:hidden xl:block'>Home</span></a>
 
-            <a href="/Cart" className='hover:underline hover:scale-105 flex tooltip tooltip-top' data-tip="Cart"><i className="ri-shopping-cart-line text-lg"></i>
+            <a href="/Cart" className='hover:underline hover:scale-105 flex tooltip tooltip-top'
+             data-tip="Cart"><i className="ri-shopping-cart-line text-lg"></i>
             <span className='sm:hidden xl:block mt-1'>Cart</span>
             <span className='xl:ml-0 mt-1 '>({totalItems})</span></a>
 
@@ -52,7 +57,7 @@ const Nav2 = () => {
             <span className='sm:hidden xl:block'>Category</span>
             </div>
              <ul tabIndex={0} className="dropdown-content menu bg-[#1f4550]  dark:bg-black dark:text-white 
-             rounded-box z-[50] xl:w-20 sm:w-20 p-2  xl:text-lg sm:text-[9px]">
+             rounded-box z-[50] xl:w-20 sm:w-20 p-2  xl:text-[12px] sm:text-[9px]">
                 <li className='hover:underline duration-500 ml-[-10px] mt-3'><a href='/BeautyandSkincare'>Beauty & Skincare</a></li>
                 <hr className="p-1 border-white sm:w-16" />
                  <li className='hover:underline duration-500 ml-[-14px]'><a href='/ClothingandAcesserories'>Clothing & Accessories</a></li>

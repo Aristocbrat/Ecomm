@@ -7,7 +7,7 @@ import { MdCancel } from "react-icons/md";
 import { FaNairaSign } from "react-icons/fa6";
 
 const Cart = () => {
- const [emptyWishlist,] = useState(0);
+ const [] = useState(0);
     const {
       isEmpty,
       totalUniqueItems,
@@ -34,7 +34,7 @@ const Cart = () => {
      
        <div className="main">
          <section className='container px-5'>
-          <h3 className='font-bold xl:text-3xl sm:text-xl py-4 mx-auto'>Cart({totalUniqueItems}) Total Items : ({totalItems})</h3>
+          <h3 className='font-bold xl:text-3xl sm:text-xl py-4 mx-auto'>Cart({totalUniqueItems}) Total Items : ({totalItems })</h3>
           <table className=' text-black font-bold w-[98%] px-5 bg-[#E7F0DC] py-3 mt-8 mx-auto'>
             <tbody>
             {items.map((item , index)=>{

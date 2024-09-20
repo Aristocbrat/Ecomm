@@ -26,8 +26,10 @@ function App() {
     <>
     <div className="dark:bg-black dark:text-white dark:duration-500 duration-500 ">
     <Nav/>
-    <Nav2/>
+    
     <CartProvider>
+
+    <Nav2/>
       <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/Cart' element={<Cart/>}/>

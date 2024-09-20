@@ -53,16 +53,16 @@ const Home = () => {
           <a href="#" className='underline xl:hover:scale-150 sm:hover:scale-95 duration-500 sm:text-[9px] xl:text-lg'> Customer Care</a>
          </div>
          <div className="flex justify-center py-3 gap-6">
-          <img src="/public/App Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
-          <img src="/public/Play Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
+          <img src="/App Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
+          <img src="/Play Store.png" alt="" className='xl:h-[40px] sm:h-[30px]' />
          </div>
          {/* <HiChevronDoubleDown /> */}
          </div>
-        <div className=" w-[100%]">
-          <div className="new sticky bg-white top-0 w-full z-30 dark:bg-black dark:text-white ">
+         </div>
+        
+          <div className="new sticky top-0 w-full z-20 bg-white text-black dark:bg-black dark:text-white ">
           <h1 className='text-4xl flex justify-center font-bold py-3'>New Arrivals <GiLindenLeaf /></h1>
           </div>
-        
             <div className="flex justify-center flex-wrap gap-7 mt-4 pd w-[100%] ">
                 {productdata.map((item,index)=>{
                    return(
@@ -74,9 +74,8 @@ const Home = () => {
                     key={index}/>
                    )  
                 })}  
-            </div>
         </div>
-        </div>
+        
         <div className="deals  dark:bg-[#2f6e80] mt-4">
           <section>
             <div className="headi flex xl:gap-20 sm:gap-4 justify-center xl:px-20 py-4 sticky top-0 w-full z-20 bg-[#538faf] dark:bg-[#1f4550]">

@@ -21,6 +21,7 @@ import img8 from "./../../assets/images/new.jpg"
 import img9 from "./../../assets/images/team2.jpg"
 import img10 from "./../../assets/images/team1.jpg"
 import img11 from "./../../assets/images/mn1.jpg"
+import Discountnav from './Discountnav';
 
 
 const Discount = () => {
@@ -31,19 +32,9 @@ const Discount = () => {
   };
 
   return (
-    <div className='w-full overflow-hidden '>
-       <div className="regis sticky top-[0%] z-20 w-full bg-white  dark:bg-black dark:text-white flex justify-between xl:px-7 sm:px-2 py-4">
-  <h1 className='xl:text-3xl sm:text-[12px] font-bold sm:mt-2'>Sell with 3rdGB</h1>
-  <h1 className='flex py-2 font-semibold sm:text-[10px] xl:text-lg xl:w-[250px] sm:w-[120px]'>
-    <RiDiscountPercentFill className='xl:text-3xl sm:text-[20px] text-green-500' /> 
-    Get up to 10% on your first #50,000 in branded sales.
-    
-  </h1>
-  <a href="#" className='underline font-bold hover:text-green-500 duration-500 sm:text-[12px] xl:text-lg mt-2'>Learn more</a>
-  <button className='flex bg-yellow-500 btn rounded-full text-white hover:bg-slate-600 hover:scale-90 duration-300 hover:text-white'>
-    Sign Up
-  </button>
-</div>
+    <div className='w-full overflow-hidden bg-white dark:bg-black dark:text-white '>
+     
+      <Discountnav/>
 
           <div className="main mt-8 py-4 bg-[#f1efef] dark:bg-[#1f4550]  [clip-path:ellipse(900px_400px_at_10%_9%)] w-full">
              <h1 className='xl:text-7xl sm:text-2xl px-4 py-3 xl:w-[800px] sm:w-[90%] font-bold ms-7'>Create a 3rdGB seller's account</h1>
@@ -66,15 +57,22 @@ const Discount = () => {
               <img src={img2} alt="" className='xl:w-[300px] rounded-t-full object-cover'/>
             <div className="inctext mt-10 xl:ml-4">
                <h1 className='xl:text-6xl font-bold pb-4'>Get started with #50,000 in Incentive</h1>
-               <p className='xl:w-[590px] sm:w-[90%] font-bold'>Ready to sell with 3rdGB ? Well get ready to have your mind blown with Our Series of Incentives.</p>
-               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 xl:ml-[-9%] rounded-lg mt-5 xl:w-[89%] sm:w-full">
+               <p className='xl:w-[590px] sm:w-[90%] font-bold'>Ready to sell with 3rdGB ? Well get 
+                ready to have your mind blown with Our Series of Incentives.</p>
+               <div className="inctt2 bg-[#f1efef] dark:bg-[#1f4550] py-4 xl:px-4 sm:px-2 xl:ml-[-9%]
+                rounded-lg mt-5 xl:w-[89%] sm:w-full">
                 <ul>
-                  <li className='py-2 flex gap-2'><FaCheck /> <span className='font-bold'>10% back</span>on your first #50,000 on branded sales. </li>
-                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>5% back </span> through your first year until you reach #1,000,000. </li>
-                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>#10,000 off </span> shipments into the 3rdGB fufillment network </li>
-                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>#5,000 credit </span> to create Sponsored products or Sponsored brand ads </li>
+                  <li className='py-2 flex gap-2'><FaCheck /> <span className='font-bold'>10% back
+                    </span>on your first #50,000 on branded sales. </li>
+                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>5% back </span>
+                   through your first year until you reach #1,000,000. </li>
+                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>#10,000 off </span>
+                   shipments into the 3rdGB fufillment network </li>
+                  <li className='py-2 flex gap-2'><FaCheck /><span className='font-bold'>#5,000 credit </span> 
+                  to create Sponsored products or Sponsored brand ads </li>
                 </ul>
-                <a href="#" className='flex hover:underline font-semibold'>See all Incentives <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /> </a>
+                <a href="#" className='flex hover:underline font-semibold group'>See all Incentives
+                   <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /> </a>
                </div>
             </div>
             </div>
@@ -191,7 +189,8 @@ const Discount = () => {
                       <h2 className="card-title text-[13px] font-bold mx-auto ">Co-founder of ilikemyGoods.com </h2>
                         <p className='font-semibold'> "I was looking for a community i could trust and i am really happy i found it.All I needed to do was find them" </p>
                          <div className="card-actions">
-                           <a href="#" className='flex text-xl hover:underline'>See Vifi's story here  <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /></a>
+                           <a href="#" className='flex text-xl group hover:underline'>
+                            See Vifi's story here  <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /></a>
                           </div>
                        </div>
                      </div>
@@ -204,19 +203,21 @@ const Discount = () => {
                      <div className="card-body xl:mt-0 sm:mt-7">
                      <div className="cardname"><h1 className='font-bold ml-[35%]'>Femi Odegbami</h1></div>
                       <h2 className="card-title text-[13px] font-bold mx-auto">CEO Look9ice INC</h2>
-                       <p>"Not many people know's the struggle of finding new ways of selling your product ,I am so lucky i found this and this is a game changer"</p>
+                       <p>"Not many people know's the struggle of finding new ways of selling your product ,
+                        I am so lucky i found this and this is a game changer"</p>
                        <div className="card-actions ">
-                       <a href="#" className='flex text-xl hover:underline'>See Femi's story here  <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /></a> </div>
+                       <a href="#" className='flex text-xl group hover:underline'>See Femi's story here  
+                        <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /></a> </div>
                       </div>
                    </div>
               </div>
            </div>
            <div className="bg-[#f1efef] flex w-[95%] xl:flex-row sm:flex-col justify-between mt-[4%] mx-auto px-6 py-5 font-extrabold text-4xl text-blue-950 dark:bg-[#1f4550] dark:text-white">
-               <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-white">
+               <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-black">
                 <h1 className='justify-center flex'>#2,300,000+</h1>
                 < p className='xl:text-xl sm:text-[19px] font-semibold xl:w-[350px] sm:w-[100%]'>Average sales for Nigerian-based sellers monthly.</p>
                </div>
-               <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-white">
+               <div className="div1 px-4 py-4 border-r-2 sm:border-hidden xl:border-black">
                 <h1 className='justify-center flex'>+70%</h1>
                 < p className='xl:text-xl sm:text-[19px] font-semibold xl:w-[350px] sm:w-[100%]'>Percentage of sales at 3rdGB store from independent sellers.
                 Mostly small & medium-sized businesses.</p>
@@ -232,42 +233,66 @@ const Discount = () => {
               <div className="gs1">
                 <h1 className='xl:text-5xl sm:text-xl font-extrabold'>Ready to get started ?</h1>
                 <div className="subt xl:ml-5 xl:px-6 xl:w-[650px] sm:w-[100%]">
-                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl'><span className='font-bold  px-4'>Step 1.</span> Choose a selling plan :</p>
-                <p className='xl:w-[450px] sm:w-[90%] font-semibold xl:ml-[17%] opacity-70'>- We offer two type of selling plans so you can choose the right package of tools and services for the right price.</p>
-                <ul className='xl:ml-[20%] font-semibold opacity-70 sm:w-[95%] xl:w-[420px] '>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='text-xl mt-[2px]' />The <span className='font-bold'>Individual</span> selling plan costs #2,500 per sale</li>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='text-xl mt-[2px]'/>The <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
+                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl'>
+                  <span className='font-bold  px-4'>Step 1.</span> Choose a selling plan :</p>
+                <p className='xl:w-[450px] sm:w-[90%] font-semibold xl:ml-[17%] opacity-70 hover:opacity-100 duration-500'>- We offer two type of selling plans so you can choose the right package of tools and services for the right price.</p>
+                <ul className='xl:ml-[20%] font-semibold   sm:w-[95%] xl:w-[420px] '>
+                  <li className='flex gap-2 py-3 opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='text-xl mt-[2px]' />The
+                     <span className='font-bold'>Individual</span> selling plan costs #2,500 per sale</li>
+                  <li className='flex gap-2 py-3 opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='text-xl mt-[2px]'/>The
+                     <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
                 </ul>
                 <p className='py-4 xl:ml-[19%] font-semibold'>You can change or cancel your plan at anytime </p>
                 <p className='xl:w-[400px] sm:w-[90%] xl:ml-[19%] font-semibold'>3rdGB also collects <span className='hover:underline duration-500 hover: font-extrabold'>referral fee</span> on each item sold and other selling fees can apply in some cases</p>
-                <a href="#" className='flex gap-3 xl:ml-[19%] py-4 hover:translate-x-2 duration-500 font-bold'>Pick your selling plan <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /> </a>
+                <a href="#" className='flex gap-3 xl:ml-[19%] py-4 group hover:translate-x-2 duration-500 font-bold'>
+                  Pick your selling plan <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /> </a>
                 </div>
                   
                 
                 <div className="subt xl:ml-5 xl:px-6 xl:w-[650px] sm:w-[100%] mt-[7%]">
-                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl  xl:w-[450px] sm:w-[96%]'><span className='font-bold  px-4'>Step 2.</span> Create your seller's account :</p>
-                <p className='xl: xl:w-[450px] sm:w-[90%] font-semibold xl:ml-[17%] opacity-70'>- Click the sign up button on this page to Create a seller's account. You are to use your email associated to your customer's account</p>
-                <ul className='xl:ml-[20%] font-semibold opacity-70 sm:w-[95%] xl:w-[420px] sm:ml-[-3%]'>
-                  <li className='flex gap-2'>You will need the following to Verify your account <FaArrowTurnDown className='text-xl mt-[6px]'/> </li>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='xl:text-xl mt-[2px]' />The <span className='font-bold'>Individual</span> selling plan costs #2,500 per sale</li>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='xl:text-xl mt-[2px]'/>The <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
+                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl  xl:w-[450px] sm:w-[96%]'>
+                  <span className='font-bold  px-4'>Step 2.</span> Create your seller's account :</p>
+                <p className='xl: xl:w-[450px] sm:w-[90%] font-semibold xl:ml-[17%] opacity-70 hover:opacity-100'>
+                  - Click the sign up button on this page to Create a seller's account. 
+                  You are to use your email associated to your customer's account</p>
+                <ul className='xl:ml-[20%] font-semibold sm:w-[95%] xl:w-[420px] sm:ml-[-3%] group'>
+                  <li className='flex gap-2 opacity-70'>
+                    You will need the following to Verify your account 
+                    <FaArrowTurnDown className='text-xl mt-[6px] group-hover:translate-y-2 duration-500'/> </li>
+                  <li className='flex gap-2 py-3  opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='xl:text-xl mt-[2px]' />
+                  The <span className='font-bold '>Individual</span> selling plan costs #2,500 per sale</li>
+                  <li className='flex gap-2 py-3 opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='xl:text-xl mt-[2px]'/>
+                  The <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
                 </ul>
                 <p className='py-4 xl:ml-[19%] font-semibold'>You can change or cancel your plan at anytime </p>
                 <p className='xl:w-[400px] xl:ml-[19%] sm:w-[80%] font-semibold'>3rdGB also collects <span className='hover:underline duration-500 hover: font-extrabold'>referral fee</span> on each item sold and other selling fees can apply in some cases</p>
-                <a href="#" className='flex gap-3 xl:ml-[19%] py-4 hover:translate-x-2 duration-500 font-bold'>Create your 3rdGB seller's account <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /> </a>
+                <a href="#" className='flex gap-3 xl:ml-[19%] py-4 group hover:translate-x-2 duration-500 font-bold'>
+                  Create your 3rdGB seller's account
+                   <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /> </a>
                 </div>
 
                 
                 <div className="subt xl:ml-5 xl:px-6 xl:w-[650px] sm:w-[100%]">
-                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl'><span className='font-bold  px-4'>Step 3.</span> Start selling :</p>
-                <p className='xl:w-[450px] sm:w-[85%] sm:ml-[-3%] font-semibold xl:ml-[17%] opacity-70'>- We offer two type of selling plans so you can choose the right package of tools and services for the right price.</p>
-                <ul className='xl:ml-[20%] xl:w-[420px] sm:w-[95%] sm:ml-[-4%]  font-semibold opacity-70'>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='text-xl mt-[2px]' />The <span className='font-bold'>Individual</span> selling plan costs #2,500 per sale</li>
-                  <li className='flex gap-2 py-3'><FaArrowAltCircleRight className='text-xl mt-[2px]'/>The <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
+                <p className='mt-[5%] flex gap-2 font-bold xl:text-xl'><span className='font-bold  px-4'>
+                  Step 3.</span> Start selling :</p>
+                <p className='xl:w-[450px] sm:w-[85%] sm:ml-[-3%] font-semibold xl:ml-[17%] opacity-70 hover:opacity-100 duration-500'>
+                  - We offer two type of selling plans so you can choose the right package of tools and services for the right price.</p>
+                <ul className='xl:ml-[20%] xl:w-[420px] sm:w-[95%] sm:ml-[-4%]  font-semibold '>
+                  <li className='flex gap-2 py-3 opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='text-xl mt-[2px] ' />
+                  The <span className='font-bold'>Individual</span> selling plan costs #2,500 per sale</li>
+                  <li className='flex gap-2 py-3 opacity-70 hover:opacity-100 duration-500'>
+                    <FaArrowAltCircleRight className='text-xl mt-[2px]'/>
+                  The <span className='font-bold'>Professional</span> selling plan costs #5,500 per sale</li>
                 </ul>
                 <p className='py-4 xl:ml-[19%] font-semibold'>You can change or cancel your plan at anytime </p>
                 <p className='xl:w-[400px] xl:ml-[19%] sm:w-[95%] font-semibold'>3rdGB also collects <span className='hover:underline duration-500 hover: font-extrabold'>referral fee</span> on each item sold and other selling fees can apply in some cases</p>
-                <a href="#" className='flex gap-3 ml-[19%] py-4 hover:translate-x-2 duration-500 font-bold'>Learn how to sell <TiLocationArrow className='hover:translate-y-3 duration-300 text-2xl' /> </a>
+                <a href="#" className='flex gap-3 ml-[19%] py-4 group hover:translate-x-2 duration-500 font-bold'>
+                  Learn how to sell <TiLocationArrow className='group-hover:translate-x-3 duration-300 text-2xl' /> </a>
                 </div>
               </div>
               <div className='gs2 mr-8'>
