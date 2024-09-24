@@ -16,15 +16,16 @@ const Furnint = (Fi) => {
 
      
 <div className="card bg-[#F4A261] xl:w-96 xl:h-[450px] sm:h-[190px] sm:w-[150px] text-white  shadow-xl">
-    <figure className="px-10 xl:pt-10">
+    <figure className="px-1 xl:pt-10">
        <img
        src={Fi.img}
 alt="beauty"
-className="rounded-xl w-96 object-cover hover:scale-125 duration-500 " />
+className="rounded-xl w-full object-cover hover:scale-125 duration-500 " />
 </figure>
 <div className="card-body items-center text-center dark:text-black">
 <h2 className="card-title xl:text-lg sm:text-[11px]">{Fi.title}</h2>
-<h2 className="card-price flex  xl:text-lg sm:text-[9px]"><FaNairaSign className='xl:mt-[6px] sm:mt-[3px] ml-1 xl:text-lg sm:text-[9px]' />
+<h2 className="card-price flex  xl:text-lg sm:text-[9px]">
+  <FaNairaSign className='xl:mt-[6px] sm:mt-[3px] ml-1 xl:text-lg sm:text-[8px]' />
 {Fi.price}.00</h2>
 <p className='card-desc  xl:text-lg sm:text-[9px]'>{Fi.desc}</p>
 <div className="badge badge-outline font-bold xl:block sm:hidden">Furniture & Interior</div>

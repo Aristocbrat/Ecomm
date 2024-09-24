@@ -119,7 +119,7 @@ const productdata8 = [
         img: img13,
         title: "Supabase Headphone",
         price:120000,
-        desc:"Supabase (Noise Cancellation)"
+        desc:"(Noise Cancellation)"
     },
     {
         id: 14,

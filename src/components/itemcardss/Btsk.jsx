@@ -19,11 +19,11 @@ const Btsk = (Bt) => {
 
      
       <div className="card bg-[#dab3a7] xl:w-96 xl:h-[450px] sm:h-[190px] sm:w-[150px]  shadow-xl">
-          <figure className="px-10 xl:pt-10">
+          <figure className="px-1 xl:pt-10">
              <img
              src={Bt.img}
       alt="beauty"
-      className="rounded-xl w-96 object-cover hover:scale-125 duration-500" />
+      className="rounded-xl w-full object-cover hover:scale-125 duration-500" />
   </figure>
   <div className="card-body items-center text-center dark:text-black">
     <h2 className="card-title xl:text-lg sm:text-[11px]">{Bt.title}</h2>

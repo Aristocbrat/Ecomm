@@ -16,15 +16,16 @@ const Sportsout = (So) => {
 
      
 <div className="card bg-[#1b3b44] xl:w-96 xl:h-[450px] sm:h-[190px] sm:w-[150px] text-white  shadow-xl">
-    <figure className="px-10 xl:pt-10">
+    <figure className="px-1 xl:pt-10">
        <img
        src={So.img}
 alt="beauty"
-className="rounded-xl w-96 object-cover hover:scale-125 duration-500 " />
+className="rounded-xl w-full object-cover hover:scale-125 duration-500 " />
 </figure>
 <div className="card-body items-center text-center">
 <h2 className="card-title xl:text-lg sm:text-[11px]">{So.title}</h2>
-<h2 className="card-price flex xl:text-lg sm:text-[7px]"><FaNairaSign className='xl:mt-[6px] sm:mt-[2px] ml-1 xl:text-lg sm:text-[9px]' />
+<h2 className="card-price flex xl:text-lg sm:text-[7px]">
+  <FaNairaSign className='xl:mt-[6px]  ml-1 xl:text-[15px] sm:text-[7px]' />
 {So.price}.00</h2>
 <p className='card-desc xl:text-lg sm:text-[7px]'>{So.desc}</p>
 <div className="badge badge-outline font-bold xl:block sm:hidden">Sports,Fitness & Outdoors</div>

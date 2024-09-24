@@ -22,7 +22,7 @@ const Sportbs = (SS) => {
   <div className="card-body dark:text-black">
     <h2 className="card-title xl:text-lg sm:text-[11px] sm:mt-2 xl:w-full sm:w-[100%] sm:ml-[-7%]">{SS.title}</h2>
     <h2 className="card-price flex xl:text-lg sm:text-[7px]">
-      <FaNairaSign className='xl:mt-[6px] sm:mt-[2px] ml-1 xl:text-lg sm:text-[7px]' />
+      <FaNairaSign className='xl:mt-[6px] sm:mt-[2px] ml-1 xl:text-[15px] sm:text-[7px]' />
       {SS.price}.00</h2>
     <h2 className="card-desc xl:text-lg sm:text-[9px]">
      {SS.desc}

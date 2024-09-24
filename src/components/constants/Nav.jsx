@@ -47,7 +47,7 @@ const Nav = () => {
               <span><i className="ri-arrow-down-s-fill"></i></span>
             </div>
             {isDropdownOpen && (
-              <div className="absolute z-10 w-full mt-2 bg-slate-950 border border-gray-300 rounded shadow">
+              <div className="absolute z-30 w-full mt-2 bg-slate-950 border border-gray-300 rounded shadow">
                 {options.map(option => (
                   <div
                     key={option.value}

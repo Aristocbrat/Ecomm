@@ -77,35 +77,35 @@ const productdata10 = [
     {
         id: 8,
         img: img8,
-        title: "Single Dining Setup",
+        title: " Dining Setup",
         price: 150000,
         desc:"Dinning"
     },
     {
         id: 9,
         img: img9,
-        title: "Sitting Room Setup",
+        title: "S.Room Setup",
         price: 3150000,
         desc:"Sitting Room Setup"
     },
     {
         id: 10,
         img: img10,
-        title: "Danaos Rocking Chair",
+        title: " Rocking Chair",
         price: 550000,
-        desc:"Danaos"
+        desc:"Danaos Rocking chair"
     },
     {
         id: 11,
         img: img11,
-        title: "Beach House Setup",
+        title: "B.House Setup",
         price: 5450000,
         desc:"Beach House Setup"
     },
     {
         id: 12,
         img: img12,
-        title: "Living Room Setup",
+        title: "L.Room Setup",
         price: 7050000,
         desc:"Living Room Setup"
     },
@@ -140,7 +140,7 @@ const productdata10 = [
     {
         id: 17,
         img: img17,
-        title: "SWalim Wallpaper",
+        title: " Wallpaper",
         price: 150000,
         desc:"SWalim Wallpaper"
     },
@@ -154,16 +154,16 @@ const productdata10 = [
     {
         id: 19,
         img: img19,
-        title: "Sams Cushion Chair",
+        title: " Cushion Chair",
         price: 1200000,
-        desc:"Strong and Reliable"
+        desc:"Sams Cushion Chair"
     },
     {
         id: 20,
         img: img20,
-        title: "Sams Wooden Leather Chair",
+        title: " Leather Chair",
         price: 150000,
-        desc:"Really strong & Affordable"
+        desc:"Sams Wooden Leather Chair"
     },
     {
         id: 21,
@@ -182,9 +182,9 @@ const productdata10 = [
     {
         id: 23,
         img: img23,
-        title: "Kunl Cushion Chair",
+        title: " Cushion Chair",
         price: 900000,
-        desc:"Strong and durable"
+        desc:"Kunl Cushion Chair"
     },
    
 ];

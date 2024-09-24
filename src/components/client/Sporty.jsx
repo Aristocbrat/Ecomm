@@ -19,7 +19,7 @@ const Sporty = () => {
 
       const paginate = (pageNumber) => setCurrentPage(pageNumber); 
   return (
-    <div className='overflow-hidden'>
+    <div>
         <div className="headss sticky top-0 z-20 bg-white  dark:bg-black dark:text-white w-full">
         <h1 className='font-extrabold xl:text-4xl sm:text-xl flex justify-center py-5 gap-3 '>
         <CgGym />

@@ -56,7 +56,7 @@ const productdata7 = [
         img: img4,
         title: "TFA's Office Shirt (Male)",
         price:25000,
-        desc:"Premium soft packing shirt"
+        desc:"Premium packing shirt"
     },
     {
         id: 5,
@@ -70,7 +70,7 @@ const productdata7 = [
         img: img6,
         title: "Silk dxt Summer Dress (white)",
         price:32000,
-        desc:"Slay for the summer with silk"
+        desc:"Slay the summer with silk"
     },
     {
         id: 7,

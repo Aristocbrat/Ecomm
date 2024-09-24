@@ -23,16 +23,16 @@ const productdata9 = [
     {
         id: 1,
         img: img1,
-        title: "Spalding Basketball",
+        title: " Basketball",
         price: 55040,
         desc:"Spalding Basketball"
     },
     {
         id: 2,
         img: img2,
-        title: "Custom Baseball Bat",
+        title: "Baseball Bat",
         price: 57000,
-        desc:"Hit in Style"
+        desc:"Custom"
     },
     {
         id: 3,
@@ -107,14 +107,14 @@ const productdata9 = [
     {
         id: 13,
         img: img13,
-        title: "Champions League Football",
+        title: " Football",
         price: 150000,
-        desc:"Football"
+        desc:" Champions League Football"
     },
     {
         id: 14,
         img: img14,
-        title: "Harley Davison Bike",
+        title: "Harley Davison",
         price: 780000,
         desc:"Never go wrong with Harley"
     },

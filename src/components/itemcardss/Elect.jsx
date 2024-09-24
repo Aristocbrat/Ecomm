@@ -16,7 +16,7 @@ const Elect = (El) => {
 
      
 <div className="card bg-[#b19e90] xl:w-96 xl:h-[450px] sm:h-[200px] sm:w-[150px]  shadow-xl">
-    <figure className="px-10 xl:pt-10">
+    <figure className="px-1 xl:pt-10">
        <img
        src={El.img}
        alt="Electronics"
