@@ -9,7 +9,7 @@ const Socialicons = () => {
 <ul class="example-2 flex justify-center items-center xl:gap-20 sm:gap-20 sm:ml-[-10%]  xl:px-5 ">
   
   <li class="icon-content">
-    <a data-social="github" aria-label="GitHub" href="#">
+    <a data-social="github" aria-label="GitHub" href="https://github.com/Aristocbrat/">
       <div class="filled"></div>
       <svg
         xml:space="preserve"
@@ -32,7 +32,7 @@ const Socialicons = () => {
     <a
       data-social="instagram"
       aria-label="Instagram"
-      href="#"
+      href="https://www.instagram.com/3rdgbolokun/"
     >
       <div class="filled"></div>
       <svg

@@ -76,7 +76,7 @@ const Summary = () => {
                 <h1 className='xl:text-4xl font-extrabold flex justify-center py-3'>Customer's Review</h1>
                 <Slider {...sliderSettings}>
                     {productdata11.map((item, index) => (
-                        <div key={index} className="customer py-3 flex xl:ml-8 px-10  ">
+                        <div key={index} className="customer py-3 flex xl:ml-8 px-10 dark:text-black ">
                             <Summarycard
                                 name={item.name}
                                 rev={item.rev}
